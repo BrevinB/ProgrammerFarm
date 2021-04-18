@@ -1,0 +1,10 @@
+&&
+||
+for loop
+if-else
+do-while
+printf
+default
+!
+break
+==

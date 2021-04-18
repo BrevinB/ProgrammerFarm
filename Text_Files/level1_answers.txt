@@ -1,0 +1,10 @@
+=
+"value"
+50
+'a'
+float
+double
+Unicode
+40.59
+33.4F
+long
