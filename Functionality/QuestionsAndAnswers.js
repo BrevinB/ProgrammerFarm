@@ -8,8 +8,8 @@ var questions1 = [];
 function generateQAndA() {
 
 
-    questions1 = loadStrings("https://brevinb.github.io/Text_Files/level1_questions.txt");
-    answers1 = loadStrings("https://brevinb.github.io/Text_Files/level1_answers.txt");
+    questions1 = loadStrings("Text_Files/level1_questions.txt");
+    answers1 = loadStrings("Text_Files/level1_answers.txt");
 
   for (let i = 0; i < questions1.length; i++) {
 
