@@ -11,9 +11,9 @@ var total = 0;
 
 function preload() {
 
-  hayBaleImg = loadImage("../Images/HayBale.png");
-  pigImg = loadImage("../Images/Pig.png");
-  bg = loadImage("../Images/Grass.png");
+  hayBaleImg = loadImage("Images/HayBale.png");
+  pigImg = loadImage("Images/Pig.png");
+  bg = loadImage("Images/Grass.png");
 
   generateQAndA(); 
   generateLevelTwoQAndA();
