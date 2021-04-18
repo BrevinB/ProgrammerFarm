@@ -6,8 +6,8 @@ var questions2 = [];
 
 function generateLevelTwoQAndA() {
 
-    questions2 = loadStrings("../Text_Files/level2_questions.txt");
-    answers2 = loadStrings("../Text_Files/level2_answers.txt");
+    questions2 = loadStrings("Text_Files/level2_questions.txt");
+    answers2 = loadStrings("Text_Files/level2_answers.txt");
 
     for (let i = 0; i < questions2.length; i++)
     {
