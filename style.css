@@ -6,7 +6,7 @@
 
 body {
 
-  background-image: url("../Images/Background.png");
+  background-image: url("Images/Background.png");
   font-family: Arcade;
   font-size: 10px;
 
@@ -80,6 +80,6 @@ body {
 
 .settings {
 
-  background-image: url("../Images/Settings.png");
+  background-image: url("Images/Settings.png");
   
 }
