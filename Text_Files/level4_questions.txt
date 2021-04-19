@@ -1,0 +1,10 @@
+What logical operator ensures that BOTH boolean expressions are true for the overall expression to be true?
+What logical operator ensures that AT LEAST ONE boolean expression is true for the overall expression to be true?
+What loop contains the loop control variable, boolean condition, and variable updating on one line of code?
+What is one type of decision structure?
+What is an example of an exit-control loop that always executes at least once?
+What system level function lets you format the console output using format specifiers and their corresponding arguments?
+In a switch case statement, if none of the case label expressions match the switch expression, which optional label is branched to instead?
+What logical operator inverts the boolean value of a boolean expression?
+For a switch case statement, which keyword should terminate a case label expression to stop all remaining case expressions from executing?
+Which relational operator tests for equality between its two operands?

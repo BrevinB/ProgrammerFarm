@@ -1,0 +1,10 @@
++
+length
+local
+//
+/** */
+global
+import
+charAt
+JOptionPane
+Scanner
