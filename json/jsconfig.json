@@ -1,7 +1,0 @@
-{
-  "include": [
-    "*.js",
-    "libraries/*.js",
-    "/Users/brevin/.vscode/extensions/samplavigne.p5-vscode-1.2.6/p5types/global.d.ts"
-, "FrontEndConfiguration/sketch.js", "FrontEndConfiguration/HayBale.js", "FrontEndConfiguration/Pig.js", "Functionality/basic_functionality.js", "Functionality/boundaryCheck.js", "Functionality/QuestionsAndAnswers.js"  ]
-}
