@@ -53,6 +53,8 @@ function levelOne() {
 
  function levelTwo() {
 
+   backgroundSound.play();
+   
   //Create the haybales
  //Line 1
  hay[0] = new HayBale(340, 0,);
@@ -98,6 +100,8 @@ function levelOne() {
 
 function levelThree() {
 
+  backgroundSound.play();
+  
    //Create the haybales
  //Line 1
  hay[0] = new HayBale(340, 0,);
@@ -146,6 +150,8 @@ function levelThree() {
 
 function levelFour() {
 
+  backgroundSound.play();
+  
      //Create the haybales
  //Line 1
  hay[0] = new HayBale(340, 0,);
