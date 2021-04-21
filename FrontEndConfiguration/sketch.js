@@ -37,7 +37,7 @@ function setup() {
   haySound.setVolume(.2);
   openNav();
   cnv = createCanvas(600, 600);
-  cnv.position(375, 100, 'fixed');
+  cnv.position(windowWidth / 3.5, 100, 'fixed');
   //resize images
   hayBaleImg.resize(80,90);  
   pigImg.resize(80,80);
