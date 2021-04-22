@@ -1,12 +1,12 @@
 @font-face {
   font-family: 'Arcade'; /*a name to be used later*/
-  src: url('../Fonts/PressStart2P-Regular.ttf'); /*URL to font*/
+  src: url('Fonts/PressStart2P-Regular.ttf'); /*URL to font*/
  
 }
 
 body {
 
-  background-image: url("../Images/Background.png");
+  background-image: url("Images/Background.png");
   font-family: Arcade;
   font-size: 10px;
 
@@ -147,6 +147,6 @@ input:checked + .slider:before {
 
 .settings {
 
-  background-image: url("../Images/Settings.png");
+  background-image: url("Images/Settings.png");
   
 }
