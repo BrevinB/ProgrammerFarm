@@ -18,7 +18,9 @@ class HayBale {
 
       if(px >= this.column && px < this.column + 80 && py >= this.row && py < this.row + 90) {
       
-        haySound.play();
+        if(soundEffects == true) {
+          haySound.play();
+        }
         this.strokeW = 4;
         this.stroke = 51;
         hayClicked = true;
