@@ -18,7 +18,9 @@ class Pig {
 
       if(px >= this.column && px < this.column + 80 && py >= this.row && py < this.row + 90) {
       
-        pigSound.play();
+        if(soundEffects == true) {
+          pigSound.play();
+        }
         this.strokeW = 4;
         this.stroke = 51;
         pigClicked = true;

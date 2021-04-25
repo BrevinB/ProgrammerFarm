@@ -13,6 +13,8 @@ let backgroundSound;
 let haySound;
 var initVol = .1;
 let arcadeFont;
+var music = false;
+var soundEffects = false;
 
 function preload() {
   soundFormats('mp3');
@@ -35,11 +37,10 @@ function preload() {
 
 
 function setup() {
-  openNav();
+  volumeSettings();
   backgroundSound.setVolume(initVol);
   pigSound.setVolume(.2);
   haySound.setVolume(.2);
-  //begginNav();
   cnv = createCanvas(600, 600);
   cnv.position(windowWidth / 3, 100, 'fixed');
   
@@ -75,17 +76,7 @@ function draw() {
    //Top left corner
    rect(0,-5,85,90);
  
-   // //bottom right corner 
-   // rect(515,515,85,90);
  
-   // //top right corner
-   // rect(515,-5,85,90);
- 
-   // //bottom left corner
-   // rect(0,515,85,90);
- 
-   // //Middle
-   // rect(0,172,85,85);
    
    //pig at starting position
    pig.display();
@@ -140,7 +131,6 @@ function draw() {
 
   }
 
-  // ans[0].p.position(515, -5);
 
 }
 
@@ -178,7 +168,9 @@ function keyPressed() {
 
     if(hayClicked) {
       hayL = true;
-      haySound.play();
+      if(soundEffects == true) {
+        haySound.play();
+      }
       hay[index].column -= 85;
       hay[index].checkBorder();
       hay[index].checkHayBaleColission();
@@ -201,7 +193,9 @@ function keyPressed() {
 
     if(hayClicked) {
       hayR = true;
-      haySound.play();
+      if(soundEffects == true) {
+        haySound.play();
+      }
       hay[index].column += 85;
       hay[index].checkBorder();
       hay[index].checkHayBaleColission();
@@ -223,7 +217,9 @@ function keyPressed() {
 
     if(hayClicked) {
       hayU = true;
-      haySound.play();
+      if(soundEffects == true) {
+        haySound.play();
+      }
       hay[index].row -= 85;
       hay[index].checkBorder();
       hay[index].checkHayBaleColission();
@@ -244,7 +240,9 @@ function keyPressed() {
 
     if(hayClicked) {
       hayD = true;
-      haySound.play();
+      if(soundEffects == true) {
+        haySound.play();
+      }
       hay[index].row += 85;
       hay[index].checkBorder();
       hay[index].checkHayBaleColission();
@@ -268,9 +266,3 @@ function keyPressed() {
     pig.entered();
   }
 }
-
-
-// Definition of windowResized Function
-// function windowResized() {
-//   resizeCanvas(600, 600);
-// }

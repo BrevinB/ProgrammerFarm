@@ -34,12 +34,24 @@
     <h1 id="ScoreBoard">Score :  </h1>
     <h1 id="level"></h1>
 
-    <!-- <div id="initSound" class="overlay">
+    <div id="initSound" class="overlay">
+      <div class="overlay-content">
+        <h1>Music</h1>
       <label class="switch">
-        <input type="checkbox">
+        <input type="checkbox" id="music">
         <span class="slider"></span>
-      </label> -->
-    <!-- </div> -->
+      </label> 
+
+        <h1>Sound Effects</h1>
+        <label class="switch">
+          <input type="checkbox" id="soundEffects">
+          <span class="slider"></span>
+        </label> 
+
+        <a onclick="openNav(), closeSoundSettings()">Play</a>
+        <a onclick="closeSoundSettings()">Back</a>
+      </div>
+     </div> 
 
     <div id="myNav" class="overlay">
       <!-- Button to close the overlay navigation -->
@@ -50,6 +62,7 @@
        <a onclick="levelTwoSelected(), closeNav()">Level 2</a>
        <a onclick="levelThreeSelected(), closeNav()">Level 3</a>
        <a onclick="levelFourSelected(), closeNav()">Level 4</a>
+       <a onclick="closeNav(), volumeSettings()">Sound Settings</a>
      </div> 
    </div>
 

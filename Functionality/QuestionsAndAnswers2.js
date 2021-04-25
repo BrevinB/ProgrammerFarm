@@ -155,7 +155,7 @@ function correctA2(question)
             break;
         
         case "How do you force specific operations to be performed before others in a mathematical expression?":
-            answer = "(      )";
+            answer = "(   )";
             break;
 
 

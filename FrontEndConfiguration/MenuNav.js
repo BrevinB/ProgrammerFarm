@@ -8,10 +8,39 @@ function closeNav() {
   document.getElementById("myNav").style.width = "0%";
 }
 
-// function begginNav() {
+function volumeSettings() {
 
-//   document.getElementById("initSound").style.width = "100%";
-// }
+  document.getElementById("initSound").style.width = "100%";
+
+}
+
+function closeSoundSettings() {
+  
+  pig.entered();
+  for(let i = 0; i < hay.length; i++) {
+      hay[i].entered();
+    }
+  
+  document.getElementById("initSound").style.width = "0%";
+  
+  if(document.getElementById("music").checked == true) {
+    music = true;
+    if(music == true && backgroundSound.isPlaying() == false) {
+      backgroundSound.play();
+    }
+  } else {
+    music = false;
+    backgroundSound.stop();
+
+  }
+
+  if(document.getElementById("soundEffects").checked == true) {
+    soundEffects = true;
+  } else {
+    soundEffects = false;
+  }
+
+}
 
 function youLose() {
   document.getElementById("loseAlert").style.width = "100%";

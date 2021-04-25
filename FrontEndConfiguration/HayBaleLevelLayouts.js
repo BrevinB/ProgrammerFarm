@@ -15,11 +15,13 @@ function levelOne() {
   hayClicked = false;
   pigClicked = false;
 
-  if(backgroundSound.isPlaying()) {
+  if(music == true) {
+    if(backgroundSound.isPlaying()) {
 
-  } else {
-    backgroundSound.play();
-    backgroundSound.loop();
+    } else {
+      backgroundSound.play();
+      backgroundSound.loop();
+    }
   }
   
     //Create the haybales
@@ -63,11 +65,16 @@ function levelOne() {
  function levelTwo() {
 
   document.getElementById("level").innerHTML = "Level 2";
-  if(backgroundSound.isPlaying()) {
+  hayClicked = false;
+  pigClicked = false;
 
-  } else {
-    backgroundSound.play();
-    backgroundSound.loop();
+  if(music == true) {
+    if(backgroundSound.isPlaying()) {
+
+    } else {
+      backgroundSound.play();
+      backgroundSound.loop();
+    }
   }
   //Create the haybales
  //Line 1
@@ -115,11 +122,16 @@ function levelOne() {
 function levelThree() {
 
   document.getElementById("level").innerHTML = "Level 3";
-  if(backgroundSound.isPlaying()) {
+  hayClicked = false;
+  pigClicked = false;
+  
+  if(music == true) {
+    if(backgroundSound.isPlaying()) {
 
-  } else {
-    backgroundSound.play();
-    backgroundSound.loop();
+    } else {
+      backgroundSound.play();
+      backgroundSound.loop();
+    }
   }
 
    //Create the haybales
@@ -171,11 +183,16 @@ function levelThree() {
 function levelFour() {
 
   document.getElementById("level").innerHTML = "Level 4";
-  if(backgroundSound.isPlaying()) {
-    
-  } else {
-    backgroundSound.play();
-    backgroundSound.loop();
+  hayClicked = false;
+  pigClicked = false;
+
+  if(music == true) {
+    if(backgroundSound.isPlaying()) {
+
+    } else {
+      backgroundSound.play();
+      backgroundSound.loop();
+    }
   }
   
      //Create the haybales

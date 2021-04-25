@@ -19,6 +19,13 @@ p {
   
 }
 
+.center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%)
+}
+
 /* The Overlay (background) */
 .overlay {
   /* Height & width depends on how you want to reveal the overlay (see JS below) */    
@@ -32,6 +39,7 @@ p {
   background-color: rgba(0,0,0, 0.9); /* Black w/opacity */
   overflow-x: hidden; /* Disable horizontal scroll */
   transition: 0.5s; /* 0.5 second transition effect to slide in or slide down the overlay (height or width, depending on reveal) */
+  
 }
 
 /* Position the content inside the overlay */
@@ -45,6 +53,15 @@ p {
 
 /* The navigation links inside the overlay */
 .overlay a {
+  padding: 8px;
+  text-decoration: none;
+  font-size: 36px;
+  color: #818181;
+  display: block; /* Display block instead of inline */
+  transition: 0.3s; /* Transition effects on hover (color) */
+}
+
+.overlay h1 {
   padding: 8px;
   text-decoration: none;
   font-size: 36px;
@@ -77,7 +94,7 @@ p {
 
 .switch {
   position: relative;
-  display: inline-box;
+  display: inline-block;
   width: 60px;
   height: 34px;
 }
@@ -95,7 +112,7 @@ p {
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: #ccc;
+  background-color: rgb(121, 117, 117);
   -webkit-transition: .4s;
   transition: .4s;
 }
