@@ -10,14 +10,18 @@ class Answer {
   
       display() {
 
-       
+        
+        stroke(0);
+        strokeWeight(0);
         fill(0,128,0);
         rect(this.column, this.row, 85, 85);
+
         fill(0);
         this.p = text(this.answer, this.column+40, this.row+50);
         textAlign(CENTER);
         textSize(10);
         textFont(arcadeFont);
+        
 
       }
   

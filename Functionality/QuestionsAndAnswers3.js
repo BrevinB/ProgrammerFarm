@@ -177,7 +177,7 @@ function checkAnswer3(x,y) {
                
             } else {
 
-                alert("you lose");
+                youLose();
                 total = 0;
                 document.getElementById("ScoreBoard").innerHTML = "Score : " + total;
                 pig.entered();
@@ -210,6 +210,10 @@ function newRound3()
     levelThree();
     q.remove();
     displayQ();
+    pig.entered();
+    for(let i = 0; i < hay.length; i++) {
+        hay[i].entered();
+      }
     
 
     

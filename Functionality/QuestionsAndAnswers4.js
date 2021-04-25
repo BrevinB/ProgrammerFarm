@@ -206,6 +206,10 @@ function newRound4() {
     levelFour();
     q.remove();
     displayQ();
+    pig.entered();
+    for(let i = 0; i < hay.length; i++) {
+        hay[i].entered();
+      }
     
 
     

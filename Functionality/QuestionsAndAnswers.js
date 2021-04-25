@@ -74,12 +74,12 @@ function displayA1(correctA) {
                 x = 515;
                 break;
         
-            //top right
+            //bottom right
             case 515:
                 x = 515;
                 break;
 
-            //bottom right
+            //top right
             case 516:
                 x = 0;
                 break;
@@ -163,7 +163,6 @@ function correctA1(question)
 
 //checks to see if the answer is correct 
 function checkAnswer1(x,y) {    
-   
     for(i = 0; i < 4; i++) {
         if(x == ans[i].column && y == ans[i].row) {
             if(ans[i].answer == answer1) {
@@ -213,6 +212,10 @@ function newRound1() {
     levelOne();
     q.remove();
     displayQ();
+    pig.entered();
+    for(let i = 0; i < hay.length; i++) {
+        hay[i].entered();
+      }
     
 
     

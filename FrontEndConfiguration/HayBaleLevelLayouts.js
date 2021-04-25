@@ -11,6 +11,10 @@ function resetValues() {
 
 function levelOne() {
 
+  document.getElementById("level").innerHTML = "Level 1";
+  hayClicked = false;
+  pigClicked = false;
+
   if(backgroundSound.isPlaying()) {
 
   } else {
@@ -58,6 +62,7 @@ function levelOne() {
 
  function levelTwo() {
 
+  document.getElementById("level").innerHTML = "Level 2";
   if(backgroundSound.isPlaying()) {
 
   } else {
@@ -109,6 +114,7 @@ function levelOne() {
 
 function levelThree() {
 
+  document.getElementById("level").innerHTML = "Level 3";
   if(backgroundSound.isPlaying()) {
 
   } else {
@@ -164,6 +170,7 @@ function levelThree() {
 
 function levelFour() {
 
+  document.getElementById("level").innerHTML = "Level 4";
   if(backgroundSound.isPlaying()) {
     
   } else {

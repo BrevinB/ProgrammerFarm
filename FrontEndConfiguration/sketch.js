@@ -174,7 +174,7 @@ function mousePressed() {
 //Move the haybales and set them to new location
 function keyPressed() {
 
-  if(keyCode == LEFT_ARROW && keyIsPressed) {
+  if(keyCode == LEFT_ARROW  || keyCode == 65 && keyIsPressed) {
 
     if(hayClicked) {
       hayL = true;
@@ -197,7 +197,7 @@ function keyPressed() {
 
   }
 
-  if(keyCode == RIGHT_ARROW && keyIsPressed) {
+  if(keyCode == RIGHT_ARROW || keyCode == 68 && keyIsPressed) {
 
     if(hayClicked) {
       hayR = true;
@@ -219,7 +219,7 @@ function keyPressed() {
 
   }
 
-  if(keyCode == UP_ARROW && keyIsPressed) {
+  if(keyCode == UP_ARROW || keyCode == 87 && keyIsPressed) {
 
     if(hayClicked) {
       hayU = true;
@@ -240,7 +240,7 @@ function keyPressed() {
     }
   }
 
-  if(keyCode == DOWN_ARROW && keyIsPressed) {
+  if(keyCode == DOWN_ARROW || keyCode == 83 && keyIsPressed) {
 
     if(hayClicked) {
       hayD = true;
@@ -261,7 +261,7 @@ function keyPressed() {
     }
   }
 
-  if(keyCode == ENTER && keyIsPressed) {
+  if(keyCode == ENTER || keyCode == 32 && keyIsPressed) {
     for(let i = 0; i < hay.length; i++) {
       hay[i].entered();
     }

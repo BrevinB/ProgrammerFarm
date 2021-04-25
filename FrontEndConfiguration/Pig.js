@@ -100,55 +100,57 @@ class Pig {
 
   answerCheck()  {
     
+    //Top Left
     if(this.column == 510 && this.row == 0) {
-
+        
       if(level1Check == true) {
         checkAnswer1(515, 0);
       } else if(level2Check == true) {
-        checkAnswer2(905, 115);
+        checkAnswer2(515, 0);
       } else if(level3Check == true) {
-        checkAnswer3(905, 115);
+        checkAnswer3(515, 0);
       } else if(level4Check == true) {
-        checkAnswer4(905,115);
+        checkAnswer4(515,0);
       }
       
-
+      //Middle
     } else if(this.column == 0 && this.row == 170) {
 
       if(level1Check == true) {
         checkAnswer1(0, 172);
       } else if(level2Check == true) {
-        checkAnswer2(390, 290);
+        checkAnswer2(0, 172);
       } else if(level3Check == true) {
-        checkAnswer3(390, 290);
+        checkAnswer3(0, 172);
       } else if(level4Check == true) {
-        checkAnswer4(390,290);
+        checkAnswer4(0, 172);
       }
     
-
+      //Bottom Left
     } else if(this.column == 0 && this.row == 510) {
-
+      
       if(level1Check == true) {
-        checkAnswer1(0, 515);
+        checkAnswer1(0, 516);
       } else if(level2Check == true) {
-        checkAnswer2(390, 634);
+        checkAnswer2(0, 516);
       } else if(level3Check == true) {
-        checkAnswer3(390, 634);
+        checkAnswer3(0, 516);
       } else if(level4Check == true) {
-        checkAnswer4(390,634);
+        checkAnswer4(0, 516);
       }
       
-      
-    } else if(this.column == 515 && this.row == 515) {
+      //Bottom Right
+    } else if(this.column == 510 && this.row == 510) {
 
+      
       if(level1Check == true) {
-        checkAnswer1(905, 635);
+        checkAnswer1(515, 515);
       } else if(level2Check == true) {
-        checkAnswer2(905, 635);
+        checkAnswer2(515, 515);
       } else if(level3Check == true) {
-        checkAnswer3(905, 635);
+        checkAnswer3(515, 515);
       } else if(level4Check == true) {
-        checkAnswer4(905,635);
+        checkAnswer4(515, 515);
       }
     
       
