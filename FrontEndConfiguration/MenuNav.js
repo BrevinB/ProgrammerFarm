@@ -15,7 +15,7 @@ function volumeSettings() {
 }
 
 function closeSoundSettings() {
-  
+
   pig.entered();
   for(let i = 0; i < hay.length; i++) {
       hay[i].entered();
@@ -40,6 +40,15 @@ function closeSoundSettings() {
     soundEffects = false;
   }
 
+}
+
+function howToPlay() {
+  document.getElementById("help").style.width = "100%";
+}
+
+function closeHowToPlay() {
+  document.getElementById("help").style.width = "0%";
+  document.getElementById("initSound").style.width = "100%";
 }
 
 function youLose() {

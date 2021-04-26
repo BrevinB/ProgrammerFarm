@@ -27,32 +27,78 @@
     <script src="Functionality/QuestionsAndAnswers4.js"></script>
     <script src="Functionality/Q&A.js"></script>
     <script src="FrontEndConfiguration/HayBaleLevelLayouts.js"></script>
+
+    <!-- Settings in the top left of the screen -->
     <a href="javascript:void(0)" class="settings" onclick="openNav(), resetValues()" src="Images/Settings.png">
       <img src="Images/Settings.png" width="50" height="50">
     </a>
 
+
+    <!-- Heading to display the score in the top left of the screen -->
     <h1 id="ScoreBoard">Score :  </h1>
     <h1 id="level"></h1>
 
     <div id="initSound" class="overlay">
-      <div class="overlay-content">
+      <div class="overlay-content-settings">
+        <div>
         <h1>Music</h1>
       <label class="switch">
         <input type="checkbox" id="music">
-        <span class="slider"></span>
+        <span class="slider round"></span>
       </label> 
 
         <h1>Sound Effects</h1>
         <label class="switch">
           <input type="checkbox" id="soundEffects">
-          <span class="slider"></span>
+          <span class="slider round"></span>
         </label> 
+        </div>
 
-        <a onclick="openNav(), closeSoundSettings()">Play</a>
-        <a onclick="closeSoundSettings()">Back</a>
+        <div class="initSoundNav">
+          <a onclick="openNav(), closeSoundSettings()">Play</a>
+          <a onclick="howToPlay(), closeSoundSettings()">How To Play</a>
+          <a onclick="closeSoundSettings()">Back</a>
+        </div>
       </div>
      </div> 
 
+     <!-- How to Play Instructions -->
+     <div class="overlay" id="help">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeHowToPlay()">&times;</a>
+      <!-- <h1>This is how you play the game</h1> -->
+      <div class="span-content">
+        <span class="helpSpan"><img src="Images/wasdKeys.png" height=250% width=250%></span>
+        <span class="helpSpan"><img src="Images/arrowKeys.png" height=250% width=250% id="arrow"></span>
+        </div>
+
+      <div class="span-content">
+
+        <span class="helpSpan"><img src="Images/spaceBar.png" height=150% width=260%></span>
+        <span class="helpSpan"><img src="Images/returnKey.png" height=200% width=200%></span>
+
+      </div>  
+
+      <div class="span-content-p">
+
+       <span class="helpSpanParagraph"><p>Click on the haybales or the pig and use the 
+         <span style="color:blue">wasd</span> or <span style="color:crimson">arrow</span>  keys to 
+         move them around the board. When you are done moving click the 
+         <span style="color:blue">space bar</span> or <span style="color:crimson">enter</span> 
+         to finalize the postion.
+       </p>
+      
+       <p>The goal of the game is to form a path of haybales from the pig to the correct answer. Go from level to level increasing your total score and 
+         answering questions.
+       </p>
+      </span>
+
+       
+
+      </div>
+
+    </div>
+
+    <!-- Level selection settings -->
     <div id="myNav" class="overlay">
       <!-- Button to close the overlay navigation -->
       <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
@@ -66,6 +112,7 @@
      </div> 
    </div>
 
+   <!-- Alert when you lose -->
    <div id="loseAlert" class="overlay"> 
    <div class="overlay-content">
       <p>You lose :( </p>

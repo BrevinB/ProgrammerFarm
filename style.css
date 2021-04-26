@@ -49,11 +49,50 @@ p {
   width: 100%; /* 100% width */
   text-align: center; /* Centered text/links */
   margin-top: 30px; /* 30px top margin to avoid conflict with the close button on smaller screens */
+  
+}
+
+.span-content {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 50px;
+}
+
+.helpSpan {
+
+  width: 50px;
+  height: 50px;
+
+}
+
+.helpSpanParagraph {
+
+}
+
+#arrowKeys {
+  position: relative;
+  top: 5%;
+  right: 15%;
+  /* width: 100%; */
+  text-align: right;
+  margin-top: 30px;
+}
+
+.overlay-content-settings {
+  position: relative;
+  top: 15%;
+  width: 100%;
+  text-align: center;
+  margin-top: 30px;
+
 }
 
 /* The navigation links inside the overlay */
 .overlay a {
-  padding: 8px;
+  padding: 20px;
   text-decoration: none;
   font-size: 36px;
   color: #818181;
@@ -162,14 +201,22 @@ input:checked + .slider:before {
   }
 }
 
-.settings {
-
-  background-image: url("Images/Settings.png");
-  
+.help {
+  position: fixed;
+  top: 6px;
+  right: 6px;
 }
 
 #level {
   position: fixed;
   bottom: 6px;
   left: 6px;
+}
+
+.initSoundNav {
+  padding: 20px;
+}
+
+.initSoundNav a {
+  padding: 20px;
 }
