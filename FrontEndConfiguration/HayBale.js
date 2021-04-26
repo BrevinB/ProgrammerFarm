@@ -114,6 +114,35 @@ class HayBale {
   }
 }
 
+  checkPigColission() {
+
+    for(let i = 0; i < hay.length; i++) {
+      if(hay[index] == hay[i]) {
+        continue;
+      }
+
+      if(this.column == pig.column && this.row == pig.row) {
+        switch (true) {
+          case hayL:
+            this.column += 85;
+            break;
+          case hayR:
+            this.column -= 85;
+            break;
+          case hayU:
+            this.row += 85;
+            break;
+          case hayD:
+            this.row -= 85;
+            break;
+          default:
+            break;
+        }
+      }
+    }
+
+  }
+
 }
 
 

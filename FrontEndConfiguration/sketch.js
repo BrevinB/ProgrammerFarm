@@ -26,8 +26,6 @@ function preload() {
   haySound = loadSound('sounds/hay.mp3');
   arcadeFont = loadFont('Fonts/PressStart2P-Regular.ttf');
 
-
-
   generateQAndA();  
   generateLevelTwoQAndA();
   generateLevelThreeQAndA();
@@ -174,6 +172,7 @@ function keyPressed() {
       hay[index].column -= 85;
       hay[index].checkBorder();
       hay[index].checkHayBaleColission();
+      hay[index].checkPigColission();
       hayL = false;
     }
 
@@ -199,6 +198,7 @@ function keyPressed() {
       hay[index].column += 85;
       hay[index].checkBorder();
       hay[index].checkHayBaleColission();
+      hay[index].checkPigColission();
       hayR = false;
     }
 
@@ -223,6 +223,7 @@ function keyPressed() {
       hay[index].row -= 85;
       hay[index].checkBorder();
       hay[index].checkHayBaleColission();
+      hay[index].checkPigColission();
       hayU = false;
     }
 
@@ -246,6 +247,7 @@ function keyPressed() {
       hay[index].row += 85;
       hay[index].checkBorder();
       hay[index].checkHayBaleColission();
+      hay[index].checkPigColission();
       hayD = false;
     }
 

@@ -25,9 +25,5 @@ class Answer {
 
       }
   
-      removeA() {
   
-        //   background();
-  
-      }
   }
