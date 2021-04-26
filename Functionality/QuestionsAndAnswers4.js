@@ -191,11 +191,7 @@ function checkAnswer4(x,y) {
 
 //remove current questions and answers when player wins the game
 function newRound4() {
-    for(k = 0; k < ans.length; k++) {
     
-        ans[k].removeA();
-
-     }
 
     for(h = 0; h < hay.length; h++) {
 
