@@ -195,7 +195,7 @@ function checkAnswer3(x,y) {
 //remove current questions and answers when player wins the game
 function newRound3()
 {
-   
+
 
     for(h = 0; h < hay.length; h++) {
 
@@ -205,7 +205,7 @@ function newRound3()
 
     levelThree();
     q.remove();
-    displayQ();
+    displayQ3();
     pig.entered();
     for(let i = 0; i < hay.length; i++) {
         hay[i].entered();

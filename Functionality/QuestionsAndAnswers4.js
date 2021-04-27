@@ -191,7 +191,7 @@ function checkAnswer4(x,y) {
 
 //remove current questions and answers when player wins the game
 function newRound4() {
-    
+
 
     for(h = 0; h < hay.length; h++) {
 
@@ -201,7 +201,7 @@ function newRound4() {
 
     levelFour();
     q.remove();
-    displayQ();
+    displayQ4();
     pig.entered();
     for(let i = 0; i < hay.length; i++) {
         hay[i].entered();

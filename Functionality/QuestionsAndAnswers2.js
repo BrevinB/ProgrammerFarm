@@ -200,6 +200,7 @@ function checkAnswer2(x,y) {
 function newRound2()
 {
 
+
     for(h = 0; h < hay.length; h++) {
 
         hay.pop();
@@ -208,7 +209,7 @@ function newRound2()
 
     levelTwo();
     q.remove();
-    displayQ();
+    displayQ2();
     pig.entered();
     for(let i = 0; i < hay.length; i++) {
         hay[i].entered();

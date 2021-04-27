@@ -246,8 +246,7 @@ function levelFour() {
 }
 
 function newLevel() {
-    
-     
+      
   for(h = 0; h < hay.length; h++) {
 
       hay.pop();
