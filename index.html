@@ -29,7 +29,7 @@
     <script src="FrontEndConfiguration/HayBaleLevelLayouts.js"></script>
 
     <!-- Settings in the top left of the screen -->
-    <a href="javascript:void(0)" class="settings" onclick="openNav(), resetValues()" src="Images/Settings.png">
+    <a href="javascript:void(0)" class="settings" onclick="openNav()" src="Images/Settings.png">
       <img src="Images/Settings.png" width="50" height="50">
     </a>
 
@@ -104,10 +104,10 @@
       <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
        <!-- Overlay content -->
      <div class="overlay-content">
-       <a onclick="levelOneSelected(), closeNav()">Level 1</a>
-       <a onclick="levelTwoSelected(), closeNav()">Level 2</a>
-       <a onclick="levelThreeSelected(), closeNav()">Level 3</a>
-       <a onclick="levelFourSelected(), closeNav()">Level 4</a>
+       <a onclick="resetValues(), levelOneSelected(), closeNav()">Level 1</a>
+       <a onclick="resetValues(), levelTwoSelected(), closeNav()">Level 2</a>
+       <a onclick="resetValues(), levelThreeSelected(), closeNav()">Level 3</a>
+       <a onclick="resetValues(), levelFourSelected(), closeNav()">Level 4</a>
        <a onclick="closeNav(), volumeSettings()">Sound Settings</a>
      </div> 
    </div>
