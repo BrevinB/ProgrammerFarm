@@ -247,11 +247,6 @@ function levelFour() {
 
 function newLevel() {
     
-  for(k = 0; k < ans.length; k++) {
-     
-      ans[k].removeA();
-  
-  }
      
   for(h = 0; h < hay.length; h++) {
 
