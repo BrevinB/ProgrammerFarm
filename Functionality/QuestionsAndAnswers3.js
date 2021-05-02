@@ -151,10 +151,7 @@ function correctA3(question)
         case "Which Java API class allows the program to read input from the keyboard?":
             answer = "Scanner";
             break;
-        
-        case "What keyword can be used in a variable declaration to make said variable constant?":
-            answer = "final";
-            break;
+       
     }
 
     return answer;
