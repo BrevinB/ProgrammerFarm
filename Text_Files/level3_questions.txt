@@ -6,5 +6,5 @@ How are multi-line comments specified?
 What variables are accessible anywhere in a program, no exceptions?
 Which keyword makes specific classes in the Java library available to the program?
 What String method returns the character present at a specific position for a given String?
-Which Java API class allows you to create message and input dialog boxes?
+What Keyword should be used in the declaration for a variable that is to be unchanged throughout the duration of the program?
 Which Java API class allows the program to read input from the keyboard? 
