@@ -151,7 +151,7 @@ function correctA3(question)
         case "Which Java API class allows the program to read input from the keyboard?":
             answer = "Scanner";
             break;
-       
+        
     }
 
     return answer;

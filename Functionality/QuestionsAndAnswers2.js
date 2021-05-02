@@ -151,7 +151,7 @@ function correctA2(question)
             break;
         
         case "What is a shorthand way to compute x=x%1?":
-            answer = "('x%=1')";
+            answer = "x%=1";
             break;
         
         case "How do you force specific operations to be performed before others in a mathematical expression?":
