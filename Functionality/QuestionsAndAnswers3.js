@@ -144,8 +144,8 @@ function correctA3(question)
             answer = "charAt";
             break;
         
-        case "Which Java API class allows you to create message and input dialog boxes?":
-            answer = "JOptionPane";
+        case "What keyword should be used in the declaration for a variable that is to be used unchanged throughout the duration of the program?":
+            answer = "final";
             break;
         
         case "Which Java API class allows the program to read input from the keyboard?":
