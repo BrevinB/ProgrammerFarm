@@ -1,8 +1,7 @@
-var barn;
-var pig;
-var haybale = new Array(17);
-var text;
-var font;
+var barn; //barn image
+var pig; //pig
+var haybale = new Array(17); //haybale array
+var text; //Programmer Farm title
 
 function preload()
 {
@@ -26,6 +25,13 @@ function draw()
     barn.resize(window.innerWidth, window.innerHeight) //resize barn image to fill canvas/webpage
     background(barn) //barn is the background
 
+    //create sign for title to appear on
+    fill(160, 73, 30)
+    strokeWeight(4)
+    stroke(0, 0, 0)
+    rect(235, 45, 1150, 220)
+
+    //style title
     text.style('font-size', '130px')
     text.position(285,5)
     text.style('color', 'yellow')
