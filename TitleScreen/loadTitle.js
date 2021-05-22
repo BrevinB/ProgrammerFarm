@@ -2,6 +2,7 @@ var barn;
 var pig;
 var haybale = new Array(17);
 var text;
+var font;
 
 function preload()
 {
@@ -27,7 +28,6 @@ function draw()
 
     text.style('font-size', '130px')
     text.position(285,5)
-    text.style('font-family', 'Fonts/PressStart2P-Regular.ttf')
     text.style('color', 'yellow')
 
     for (let i = 0; i < haybale.length; i++)
