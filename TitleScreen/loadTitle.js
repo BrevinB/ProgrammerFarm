@@ -3,7 +3,7 @@ var pig; //pig
 var haybale = new Array(6); //haybale array
 var title; //Programmer Farm title
 var presstoPlay; //text that tells player to click anywhere to start gameplay
-var myFont; 
+var myFont; //font to be used for text
 
 function preload()
 {
@@ -102,9 +102,11 @@ function draw()
     }
 
    image(pig, 590, 240, 80, 80) //display pig
+
+   pig.mousePressed()
 }
 
 function mousePressed()
 {
-    
+    image(pig, 590, 580, 80, 80)
 }
