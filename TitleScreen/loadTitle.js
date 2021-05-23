@@ -21,7 +21,7 @@ function setup()
 {
     createCanvas(window.innerWidth, window.innerHeight) //make canvas fill entire webpages
     title = createElement('h1', 'PROGRAMMER FARM') //title to appear
-    presstoPlay = createP('Click anywhere to play!')
+    presstoPlay = createP('Click anywhere to start!')
     //title.textFont(myFont)
 }
 
@@ -108,5 +108,5 @@ function draw()
 
 function mousePressed()
 {
-    image(pig, 590, 580, 80, 80)
+   
 }
