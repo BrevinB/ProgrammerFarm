@@ -1,7 +1,8 @@
 var barn; //barn image
 var pig; //pig
-var haybale = new Array(15); //haybale array
-var text; //Programmer Farm title
+var haybale = new Array(6); //haybale array
+var title; //Programmer Farm title
+var presstoPlay; //text that tells player to click anywhere to start gameplay
 var myFont; 
 
 function preload()
@@ -19,8 +20,9 @@ function preload()
 function setup()
 {
     createCanvas(window.innerWidth, window.innerHeight) //make canvas fill entire webpages
-    text = createElement('h1', 'PROGRAMMER FARM') //title to appear
-    //text.textFont(myFont)
+    title = createElement('h1', 'PROGRAMMER FARM') //title to appear
+    presstoPlay = createP('Click anywhere to play!')
+    //title.textFont(myFont)
 }
 
 function draw()
@@ -41,10 +43,16 @@ function draw()
     rect(235, 45, 1150, 220)
 
     //style title
-    text.style('font-size', '74px')
-    text.position(269,78)
-    text.style('color', 'white')
-    text.style('font-family', 'PressStart2P-Regular')
+    title.style('font-size', '74px')
+    title.position(269,78)
+    title.style('color', 'white')
+    title.style('font-family', 'PressStart2P-Regular')
+
+    //text that tells player to click anywhere to commence gameplay
+    presstoPlay.style('font-size', '22px')
+    presstoPlay.position(530, 190)
+    presstoPlay.style('color', 'white')
+    presstoPlay.style('font-family', 'PressStart2P-Regular')
 
     //make points to represent nails in the wood of the sign
     for (let i = 0; i < 15; i++) //uppermost nails
@@ -63,10 +71,9 @@ function draw()
 
 
 
-    for (let i = 0; i < 6; i++)
+    for (let i = 0; i < haybale.length; i++)
     {
         image(haybale[i], 350+i*89, 560, 100, 100) //bottom most layer of haybales
-       // image(haybale[i], -5+i*89, 640, 100, 100) //overlapped haybales layer 2
     }
     
     for (let i = 0; i < 5; i++)
@@ -94,5 +101,10 @@ function draw()
         image(haybale[i], 573+i*89, 295, 100, 100) //top most haybale that pig stands on
     }
 
-   image(pig, 590, 241, 80, 80) //display pig
+   image(pig, 590, 240, 80, 80) //display pig
+}
+
+function mousePressed()
+{
+    
 }
