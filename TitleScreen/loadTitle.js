@@ -2,7 +2,6 @@ var barn; //barn image
 var pig; //pig
 var haybale = new Array(6); //haybale array
 var title; //Programmer Farm title
-var presstoPlay; //text that tells player to click anywhere to start gameplay
 var myFont; //font to be used for text
 
 function preload()
@@ -21,7 +20,6 @@ function setup()
 {
     createCanvas(window.innerWidth, window.innerHeight) //make canvas fill entire webpages
     title = createElement('h1', 'PROGRAMMER FARM') //title to appear
-    presstoPlay = createP('Click anywhere to start!')
     //title.textFont(myFont)
 }
 
@@ -47,12 +45,6 @@ function draw()
     title.position(269,78)
     title.style('color', 'white')
     title.style('font-family', 'PressStart2P-Regular')
-
-    //text that tells player to click anywhere to commence gameplay
-    presstoPlay.style('font-size', '22px')
-    presstoPlay.position(530, 190)
-    presstoPlay.style('color', 'white')
-    presstoPlay.style('font-family', 'PressStart2P-Regular')
 
     //make points to represent nails in the wood of the sign
     for (let i = 0; i < 15; i++) //uppermost nails
