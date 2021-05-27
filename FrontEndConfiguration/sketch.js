@@ -35,7 +35,6 @@ function preload() {
 
 
 function setup() {
-  volumeSettings();
   backgroundSound.setVolume(initVol);
   pigSound.setVolume(.2);
   haySound.setVolume(.2);
