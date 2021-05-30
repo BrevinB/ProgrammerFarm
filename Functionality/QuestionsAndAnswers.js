@@ -84,7 +84,7 @@ function displayA1(correctA) {
                 x = 0;
                 break;
         
-            //bottome left
+            //bottom left
             case 172:
                 x = 0;
                 break;

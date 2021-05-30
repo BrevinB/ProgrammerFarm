@@ -15,7 +15,14 @@
 
   <body>
 
-  
+   <!-- Title is first and only thing player sees upon booting game -->
+    <div class="overlay" id="titlescreen">
+      <div class="overlay-content>
+      <a href="javascript:void(0)" onload="showTitle()" onclick="volumeSettings()" src="Images/TitleScreen(3).png">
+        <img id="title" src="Images/TitleScreen(3).png">
+      </a>
+      </div>
+    </div>
     
     <script src="FrontEndConfiguration/sketch.js"></script>
     <script src="FrontEndConfiguration/HayBale.js"></script>
@@ -28,16 +35,17 @@
     <script src="Functionality/Q&A.js"></script>
     <script src="FrontEndConfiguration/HayBaleLevelLayouts.js"></script>
 
+
     <!-- Settings in the top left of the screen -->
     <a href="javascript:void(0)" class="settings" onclick="openNav()" src="Images/Settings.png">
       <img src="Images/Settings.png" width="50" height="50">
     </a>
 
-
     <!-- Heading to display the score in the top left of the screen -->
     <h1 id="ScoreBoard">Score :  </h1>
     <h1 id="level"></h1>
 
+    <!-- Music and Sound Effects -->
     <div id="initSound" class="overlay">
       <div class="overlay-content-settings">
         <div>
@@ -54,6 +62,7 @@
         </label> 
         </div>
 
+        <!-- Play, How To Play, Back options on Settings -->
         <div class="initSoundNav">
           <a onclick="openNav(), closeSoundSettings()">Play</a>
           <a onclick="howToPlay(), closeSoundSettings()">How To Play</a>
@@ -69,7 +78,7 @@
       <div class="span-content">
         <span class="helpSpan"><img src="Images/wasdKeys.png" height=250% width=250%></span>
         <span class="helpSpan"><img src="Images/arrowKeys.png" height=250% width=250% id="arrow"></span>
-        </div>
+      </div>
 
       <div class="span-content">
 
