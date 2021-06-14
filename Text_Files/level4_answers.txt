@@ -3,8 +3,11 @@
 for loop
 if-else
 do-while
+while
 printf
 default
 !
 break
 ==
+>
+<

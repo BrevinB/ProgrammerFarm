@@ -29,7 +29,7 @@ function displayQ() {
     answer1 = correctA1(question); //get correct answer based on question displayed
     displayA1(answer1); //pass correct answer into displayA()
 
-    q.position(windowWidth / 4.5,5);
+    q.position(375,5);
 }
 
 //display answers in their corresponding boxes
@@ -120,15 +120,15 @@ function correctA1(question)
             break;
 
         case "Which is a string literal?":
-            answer = "\"value\"";
+            answer = '"value"';
             break;
 
         case "Which is an integer literal?":
-            answer = 50;
+            answer = "50";
             break;
 
         case "Which is a char literal?":
-            answer = "\'a\'";
+            answer = "'a'";
             break;
 
         case "Which data type stores floating point numbers with 7 digits of accuracy?":
@@ -144,15 +144,31 @@ function correctA1(question)
             break;
         
         case "Which is a double literal?":
-            answer = 40.59;
+            answer = "40.59";
             break;
         
         case "How do you force a double literal to a float literal?":
             answer = "33.4F";
             break;
         
+        case "Which data type that stores integer values has a size of 1 byte?":
+            answer = "byte";
+            break;
+        
+        case "Which data type that stores integer values has a size of 2 bytes?":
+            answer = "short";
+            break;
+        
+        case "Which data type that stores integer values has a size of 4 bytes?":
+            answer = "int";
+            break;
+        
         case "Which data type that stores integer values has a size of 8 bytes?":
             answer = "long";
+            break;
+        
+        case "What is a named storage location in the computer's memory called?":
+            answer = "variable";
             break;
 
     }
@@ -219,4 +235,4 @@ function newRound1() {
 }
 
 
-
+module.exports = correctA1

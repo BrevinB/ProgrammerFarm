@@ -102,10 +102,4 @@ function draw()
 
    image(pig, 779, 361, 80, 80) //display pig
 
-   pig.mousePressed()
-}
-
-function mousePressed()
-{
-   
 }

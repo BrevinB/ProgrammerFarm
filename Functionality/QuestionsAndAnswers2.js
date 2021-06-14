@@ -157,7 +157,18 @@ function correctA2(question)
         case "How do you force specific operations to be performed before others in a mathematical expression?":
             answer = "(   )";
             break;
-
+        
+        case "Which is a prefix incrementation of var?":
+            answer = "++var";
+            break;
+        
+        case "Which is a postfix incrementation of var?":
+            answer = "var++";
+            break;
+        
+        case "What is a shorthand way to compute var=var+5?":
+            answer = "var+=5";
+            break;
 
     }
 
@@ -218,3 +229,5 @@ function newRound2()
 
     
 }
+
+module.exports = correctA2

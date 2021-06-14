@@ -3,8 +3,11 @@ What logical operator ensures that AT LEAST ONE boolean expression is true for t
 What loop contains the loop control variable, boolean condition, and variable updating on one line of code?
 What is one type of decision structure?
 What is an example of an exit-control loop that always executes at least once?
+What kind of loop continues to execute until its corresponding boolean expression is false?
 What system level function lets you format the console output using format specifiers and their corresponding arguments?
 In a switch case statement, if none of the case label expressions match the switch expression, which optional label is branched to instead?
 What logical operator inverts the boolean value of a boolean expression?
 For a switch case statement, which keyword should terminate a case label expression to stop all remaining case expressions from executing?
 Which relational operator tests for equality between its two operands?
+Which relational operator tests that the leftmost operand is greater than the rightmost operand?
+Which relational operator tests that the leftmost operand is less than the rightmost operand?

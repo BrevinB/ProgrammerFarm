@@ -81,7 +81,7 @@ function displayA3(correctA) {
                 x = 0;
                 break;
         
-            //bottome left
+            //bottom left
             case 172:
                 x = 0;
                 break;
@@ -128,8 +128,12 @@ function correctA3(question)
             answer = "//";
             break;
         
-        case "How are multi-line comments specified?":
+        case "How are documentation comments specified?":
             answer = "/** */";
+            break;
+        
+        case "How are multi-line comments specified?":
+            answer = "/* */";
             break;
         
         case "What variables are accessible anywhere in a program, no exceptions?":
@@ -151,7 +155,18 @@ function correctA3(question)
         case "Which Java API class allows the program to read input from the keyboard?":
             answer = "Scanner";
             break;
+
+        case "Which method lets you convert a String into an Integer?":
+            answer = "parseInt";
+            break;
         
+        case "When you convert a value from a larger data type to a smaller data type, what type of conversion is being used?":
+            answer = "narrowing";
+            break;
+        
+        case "When you convert a value from a smaller data type to a larger data type, what type of conversion is being used?":
+            answer = "widening";
+            break;
     }
 
     return answer;
@@ -211,3 +226,5 @@ function newRound3()
 
     
 }
+
+module.exports = correctA3

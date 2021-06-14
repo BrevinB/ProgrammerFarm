@@ -151,6 +151,18 @@ function correctA4(question)
         case "Which relational operator tests for equality between its two operands?":
             answer = "==";
             break;
+        
+        case "What kind of loop continues to execute until its corresponding boolean expression is false?":
+            answer = "while";
+            break;
+        
+        case "Which relational operator tests that the leftmost operand is greater than the rightmost operand?":
+            answer = ">";
+            break;
+
+        case "Which relational operator tests that the leftmost operand is less than the rightmost operand?":
+            answer = "<";
+            break
 
     }
 
@@ -211,3 +223,4 @@ function newRound4() {
     
 }
 
+module.exports = correctA4
