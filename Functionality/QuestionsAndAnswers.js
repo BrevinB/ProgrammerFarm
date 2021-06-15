@@ -39,6 +39,7 @@ function displayA1(correctA) {
     for (let i = 0; i < answers1.length; i++)
     {
         aArray[i] = answers1[i];
+        
     }
 
     var m; //index of correct answer in 'aArray' array later on in function
@@ -94,6 +95,7 @@ function displayA1(correctA) {
 
             ans[j] = new Answer(x, y, correctA);
             aArray.splice(m, 1);
+            
         
 
         } else {
@@ -235,4 +237,4 @@ function newRound1() {
 }
 
 
-module.exports = correctA1
+// module.exports = correctA1
