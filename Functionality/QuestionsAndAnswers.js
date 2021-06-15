@@ -34,18 +34,18 @@ function displayQ() {
 
 //display answers in their corresponding boxes
 function displayA1(correctA) {
-    var aArray = [];
+    var aArray1 = [];
 
     for (let i = 0; i < answers1.length; i++)
     {
-        aArray[i] = answers1[i];
+        aArray1[i] = answers1[i];
     }
 
-    var m; //index of correct answer in 'aArray' array later on in function
+    var m; //index of correct answer in 'aArray1' array later on in function
 
-    for (let i = 0; i < aArray.length; i++)
+    for (let i = 0; i < aArray1.length; i++)
     {
-        if (aArray[i] == correctA)
+        if (aArray1[i] == correctA)
         {
             m = i;
             break;
@@ -64,7 +64,7 @@ function displayA1(correctA) {
     while (y_coordinates.length != 0) {
         
         i = Math.floor(Math.random()*y_coordinates.length);
-        n = Math.floor(Math.random()*aArray.length);
+        n = Math.floor(Math.random()*aArray1.length);
         y = y_coordinates[i]; //y is a random coordinate from 'y_coordinates' if that coordinate still exists
         
         switch (y) {
@@ -93,13 +93,13 @@ function displayA1(correctA) {
         if(j == 0) {
 
             ans[j] = new Answer(x, y, correctA);
-            aArray.splice(m, 1);
+            aArray1.splice(m, 1);
         
 
         } else {
 
-            ans[j] = new Answer(x, y, aArray[n]); 
-            aArray.splice(n, 1);
+            ans[j] = new Answer(x, y, aArray1[n]); 
+            aArray1.splice(n, 1);
         }
         
         j++;
@@ -233,6 +233,5 @@ function newRound1() {
 
     
 }
-
 
 module.exports = correctA1

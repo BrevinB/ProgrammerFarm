@@ -33,18 +33,18 @@ function displayQ2() {
 //display answers in their corresponding boxes
 //display answers in their corresponding boxes
 function displayA2(correctA) {
-    var aArray = [];
+    var aArray2 = [];
 
     for (let i = 0; i < answers2.length; i++)
     {
-        aArray[i] = answers2[i];
+        aArray2[i] = answers2[i];
     }
 
-    var m; //index of correct answer in 'aArray' array later on in function
+    var m; //index of correct answer in 'aArray2' array later on in function
 
-    for (let i = 0; i < aArray.length; i++)
+    for (let i = 0; i < aArray2.length; i++)
     {
-        if (aArray[i] == correctA)
+        if (aArray2[i] == correctA)
         {
             m = i;
             break;
@@ -63,7 +63,7 @@ function displayA2(correctA) {
     while (y_coordinates.length != 0) {
         
         i = Math.floor(Math.random()*y_coordinates.length);
-        n = Math.floor(Math.random()*aArray.length);
+        n = Math.floor(Math.random()*aArray2.length);
         y = y_coordinates[i]; //y is a random coordinate from 'y_coordinates' if that coordinate still exists
         
         switch (y) {
@@ -92,13 +92,13 @@ function displayA2(correctA) {
         if(j == 0) {
 
             ans[j] = new Answer(x, y, correctA);
-            aArray.splice(m, 1);
+            aArray2.splice(m, 1);
         
 
         } else {
 
-            ans[j] = new Answer(x, y, aArray[n]); 
-            aArray.splice(n, 1);
+            ans[j] = new Answer(x, y, aArray2[n]); 
+            aArray2.splice(n, 1);
         }
         
         j++;

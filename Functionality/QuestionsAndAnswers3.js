@@ -31,18 +31,18 @@ function displayQ3() {
 
 //display answers in their corresponding boxes
 function displayA3(correctA) {
-    var aArray = [];
+    var aArray3 = [];
 
     for (let i = 0; i < answers3.length; i++)
     {
-        aArray[i] = answers3[i];
+        aArray3[i] = answers3[i];
     }
 
-    var m; //index of correct answer in 'aArray' array later on in function
+    var m; //index of correct answer in 'aArray3' array later on in function
 
-    for (let i = 0; i < aArray.length; i++)
+    for (let i = 0; i < aArray3.length; i++)
     {
-        if (aArray[i] == correctA)
+        if (aArray3[i] == correctA)
         {
             m = i;
             break;
@@ -61,7 +61,7 @@ function displayA3(correctA) {
     while (y_coordinates.length != 0) {
         
         i = Math.floor(Math.random()*y_coordinates.length);
-        n = Math.floor(Math.random()*aArray.length);
+        n = Math.floor(Math.random()*aArray3.length);
         y = y_coordinates[i]; //y is a random coordinate from 'y_coordinates' if that coordinate still exists
         
         switch (y) {
@@ -90,13 +90,13 @@ function displayA3(correctA) {
         if(j == 0) {
 
             ans[j] = new Answer(x, y, correctA);
-            aArray.splice(m, 1);
+            aArray3.splice(m, 1);
         
 
         } else {
 
-            ans[j] = new Answer(x, y, aArray[n]); 
-            aArray.splice(n, 1);
+            ans[j] = new Answer(x, y, aArray3[n]); 
+            aArray3.splice(n, 1);
         }
         
         j++;
