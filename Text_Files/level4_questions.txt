@@ -11,3 +11,4 @@ For a switch case statement, which keyword should terminate a case label express
 Which relational operator tests for equality between its two operands?
 Which relational operator tests that the leftmost operand is greater than the rightmost operand?
 Which relational operator tests that the leftmost operand is less than the rightmost operand?
+Which relational operator tests for inequality between its two operands?

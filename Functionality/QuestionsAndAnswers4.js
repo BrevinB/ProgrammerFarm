@@ -163,6 +163,10 @@ function correctA4(question)
         case "Which relational operator tests that the leftmost operand is less than the rightmost operand?":
             answer = "<";
             break;
+        
+        case "Which relational operator tests for inequality between its two operands?":
+            answer = "!=";
+            break;
 
     }
 

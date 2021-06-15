@@ -1,5 +1,5 @@
 const { test, expect } = require('@jest/globals')
-const correctA1 = require('../Functionality/QuestionsAndAnswers').default
+const correctA1 = require('../Functionality/QuestionsAndAnswers')
 
 test('correctA1 should return the correct answer for the question being passed in', () => 
 {

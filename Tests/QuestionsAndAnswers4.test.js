@@ -16,4 +16,5 @@ test('correctA4 should return the correct answer for the question being passed i
     expect(correctA4("What kind of loop continues to execute until its corresponding boolean expression is false?")).toBe("while")
     expect(correctA4('Which relational operator tests that the leftmost operand is greater than the rightmost operand?')).toBe('>')
     expect(correctA4('Which relational operator tests that the leftmost operand is less than the rightmost operand?')).toBe('<')
+    expect(correctA4("Which relational operator tests for inequality between its two operands?")).toBe("!=")
 })
