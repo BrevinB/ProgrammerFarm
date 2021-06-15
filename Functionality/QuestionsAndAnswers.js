@@ -236,9 +236,4 @@ function newRound1() {
     
 }
 
-<<<<<<< HEAD
 module.exports = correctA1
-=======
-
-// module.exports = correctA1
->>>>>>> 271c11093cad8fde60cefaefac77ee534ecf390c
