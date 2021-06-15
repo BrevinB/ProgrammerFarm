@@ -38,7 +38,12 @@ function displayA1(correctA) {
 
     for (let i = 0; i < answers1.length; i++)
     {
+<<<<<<< HEAD
         aArray1[i] = answers1[i];
+=======
+        aArray[i] = answers1[i];
+        
+>>>>>>> 271c11093cad8fde60cefaefac77ee534ecf390c
     }
 
     var m; //index of correct answer in 'aArray1' array later on in function
@@ -94,6 +99,7 @@ function displayA1(correctA) {
 
             ans[j] = new Answer(x, y, correctA);
             aArray1.splice(m, 1);
+            
         
 
         } else {
@@ -234,4 +240,9 @@ function newRound1() {
     
 }
 
+<<<<<<< HEAD
 module.exports = correctA1
+=======
+
+// module.exports = correctA1
+>>>>>>> 271c11093cad8fde60cefaefac77ee534ecf390c
