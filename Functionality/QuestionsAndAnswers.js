@@ -38,12 +38,8 @@ function displayA1(correctA) {
 
     for (let i = 0; i < answers1.length; i++)
     {
-<<<<<<< HEAD
         aArray1[i] = answers1[i];
-=======
-        aArray[i] = answers1[i];
         
->>>>>>> 271c11093cad8fde60cefaefac77ee534ecf390c
     }
 
     var m; //index of correct answer in 'aArray1' array later on in function
