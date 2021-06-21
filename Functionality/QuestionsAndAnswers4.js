@@ -1,4 +1,3 @@
-var cA; //to store correct answer info
 var answer4;
 var q;
 var answers4 = [];

@@ -1,4 +1,3 @@
-var cA; //to store correct answer info
 var answer2;
 var q; //question on top of page
 var answers2 = [];
