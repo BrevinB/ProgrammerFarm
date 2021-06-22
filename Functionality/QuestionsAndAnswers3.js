@@ -1,4 +1,3 @@
-var cA; //to store correct answer info
 var answer3;
 var q;
 var answers3 = [];
@@ -31,18 +30,18 @@ function displayQ3() {
 
 //display answers in their corresponding boxes
 function displayA3(correctA) {
-    var aArray = [];
+    var aArray3 = [];
 
     for (let i = 0; i < answers3.length; i++)
     {
-        aArray[i] = answers3[i];
+        aArray3[i] = answers3[i];
     }
 
-    var m; //index of correct answer in 'aArray' array later on in function
+    var m; //index of correct answer in 'aArray3' array later on in function
 
-    for (let i = 0; i < aArray.length; i++)
+    for (let i = 0; i < aArray3.length; i++)
     {
-        if (aArray[i] == correctA)
+        if (aArray3[i] == correctA)
         {
             m = i;
             break;
@@ -61,7 +60,7 @@ function displayA3(correctA) {
     while (y_coordinates.length != 0) {
         
         i = Math.floor(Math.random()*y_coordinates.length);
-        n = Math.floor(Math.random()*aArray.length);
+        n = Math.floor(Math.random()*aArray3.length);
         y = y_coordinates[i]; //y is a random coordinate from 'y_coordinates' if that coordinate still exists
         
         switch (y) {
@@ -81,7 +80,7 @@ function displayA3(correctA) {
                 x = 0;
                 break;
         
-            //bottome left
+            //bottom left
             case 172:
                 x = 0;
                 break;
@@ -90,13 +89,13 @@ function displayA3(correctA) {
         if(j == 0) {
 
             ans[j] = new Answer(x, y, correctA);
-            aArray.splice(m, 1);
+            aArray3.splice(m, 1);
         
 
         } else {
 
-            ans[j] = new Answer(x, y, aArray[n]); 
-            aArray.splice(n, 1);
+            ans[j] = new Answer(x, y, aArray3[n]); 
+            aArray3.splice(n, 1);
         }
         
         j++;
@@ -128,8 +127,12 @@ function correctA3(question)
             answer = "//";
             break;
         
-        case "How are multi-line comments specified?":
+        case "How are documentation comments specified?":
             answer = "/** */";
+            break;
+        
+        case "How are multi-line comments specified?":
+            answer = "/* */";
             break;
         
         case "What variables are accessible anywhere in a program, no exceptions?":
@@ -151,7 +154,18 @@ function correctA3(question)
         case "Which Java API class allows the program to read input from the keyboard?":
             answer = "Scanner";
             break;
+
+        case "Which method lets you convert a String into an Integer?":
+            answer = "parseInt";
+            break;
         
+        case "When you convert a value from a larger data type to a smaller data type, what type of conversion is being used?":
+            answer = "narrowing";
+            break;
+        
+        case "When you convert a value from a smaller data type to a larger data type, what type of conversion is being used?":
+            answer = "widening";
+            break;
     }
 
     return answer;
@@ -211,3 +225,5 @@ function newRound3()
 
     
 }
+
+module.exports = correctA3

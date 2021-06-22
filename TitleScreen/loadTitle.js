@@ -32,80 +32,74 @@ function draw()
     //create stools for sign to stand on
     strokeWeight(20)
     stroke(160, 73, 30)
-    line(250, 265, 250, 680) //leftmost stool
-    line(1450, 265, 1450, 680) //rightmost stool
+    line(250, 265, 250, 730) //leftmost stool
+    line(1531, 265, 1531, 730) //rightmost stool
 
     //create sign for title to appear on
     fill(160, 73, 30)
     strokeWeight(4)
     stroke(0, 0, 0)
-    rect(235, 90, 1230, 220)
+    rect(235, 110, 1311, 267)
 
     //style title
     title.style('font-size', '74px')
-    title.position(290,123)
+    title.position(332,150)
     title.style('color', 'white')
     title.style('font-family', 'PressStart2P-Regular')
 
     //style press to play prompt
     pressToPlay.style('font-size', '20px')
-    pressToPlay.position(563,240)
+    pressToPlay.position(640,270)
     pressToPlay.style('color', 'white')
     pressToPlay.style('font-family', 'PressStart2P-Regular')
 
     //make points to represent nails in the wood of the sign
-    for (let i = 0; i < 16; i++) //uppermost nails
+    for (let i = 0; i < 17; i++) //uppermost nails
     {
         stroke('grey');
         strokeWeight(5);
-        point(250+i*80, 105);
+        point(250+i*80, 130);
     }
 
-    for (let i = 0; i < 16; i++) //lowermost nails
+    for (let i = 0; i < 17; i++) //lowermost nails
     {
         stroke('grey');
         strokeWeight(5);
-        point(250+i*80, 295);
+        point(250+i*80, 357);
     }
 
 
 
     for (let i = 0; i < haybale.length; i++)
     {
-        image(haybale[i], 350+i*89, 660, 100, 100) //bottom most layer of haybales
+        image(haybale[i], 538+i*89, 680, 100, 100) //bottom most layer of haybales
     }
     
     for (let i = 0; i < 5; i++)
     {
-        image(haybale[i], 390+i*89, 607, 100, 100) //second layer of haybales
+        image(haybale[i], 582+i*89, 627, 100, 100) //second layer of haybales
     }
 
     for (let i = 0; i < 4; i++)
     {
-        image(haybale[i], 443+i*89, 554, 100, 100) //third layer of haybales
+        image(haybale[i], 627+i*89, 574, 100, 100) //third layer of haybales
     }
 
     for (let i = 0; i < 3; i++)
     {
-        image(haybale[i], 487+i*89, 501, 100, 100) //fourth layer of haybales
+        image(haybale[i], 671+i*89, 521, 100, 100) //fourth layer of haybales
     }
 
     for (let i = 0; i < 2; i++)
     {
-        image(haybale[i], 530+i*89, 448, 100, 100) //fifth and top most layer of haybales
+        image(haybale[i], 716+i*89, 468, 100, 100) //fifth and top most layer of haybales
     }
 
     for (let i = 0; i < 1; i++)
     {
-        image(haybale[i], 573+i*89, 395, 100, 100) //top most haybale that pig stands on
+        image(haybale[i], 761+i*89, 415, 100, 100) //top most haybale that pig stands on
     }
 
-   image(pig, 590, 342, 80, 80) //display pig
+   image(pig, 779, 361, 80, 80) //display pig
 
-   pig.mousePressed()
-}
-
-function mousePressed()
-{
-   
 }

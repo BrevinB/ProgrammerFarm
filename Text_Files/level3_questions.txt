@@ -2,9 +2,13 @@ What operator can be used for String concatenation?
 What String method returns how many characters are in a String variable?
 What variables are accessible from their declaration to the end of the method in which the declaration took place?
 How are single line comments specified?
+How are documentation comments specified?
 How are multi-line comments specified?
 What variables are accessible anywhere in a program, no exceptions?
 Which keyword makes specific classes in the Java library available to the program?
 What String method returns the character present at a specific position for a given String?
 What keyword should be used in the declaration for a variable that is to be used unchanged throughout the duration of the program?
 Which Java API class allows the program to read input from the keyboard?
+Which method lets you convert a String into an Integer?
+When you convert a value from a smaller data type to a larger data type, what type of conversion is being used?
+When you convert a value from a larger data type to a smaller data type, what type of conversion is being used?

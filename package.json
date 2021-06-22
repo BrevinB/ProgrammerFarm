@@ -1,0 +1,23 @@
+{
+  "name": "ProgrammerFarm",
+  "version": "1.0.0",
+  "description": "This README would normally document whatever steps are necessary to get your application up and running.",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest Tests"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BrevinB/ProgrammerFarm.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/BrevinB/ProgrammerFarm/issues"
+  },
+  "homepage": "https://github.com/BrevinB/ProgrammerFarm#readme",
+  "devDependencies": {
+    "jest": "^27.0.4"
+  }
+}
