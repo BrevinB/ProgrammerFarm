@@ -8,7 +8,7 @@ What system level function lets you format the console output using format speci
 In a switch case statement, if none of the case label expressions match the switch expression, which optional label is branched to instead?
 What logical operator inverts the boolean value of a boolean expression?
 For a switch case statement, which keyword should terminate a case label expression to stop all remaining case expressions from executing?
-Which relational operator tests for equality between its two operands?
+Which relational operator tests for EQUALITY between its two operands?
 Which relational operator tests that the leftmost operand is greater than the rightmost operand?
 Which relational operator tests that the leftmost operand is less than the rightmost operand?
-Which relational operator tests for inequality between its two operands?
+Which relational operator tests for INEQUALITY between its two operands?

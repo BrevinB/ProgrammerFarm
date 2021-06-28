@@ -147,7 +147,7 @@ function correctA4(question)
             answer = "break";
             break;
         
-        case "Which relational operator tests for equality between its two operands?":
+        case "Which relational operator tests for EQUALITY between its two operands?":
             answer = "==";
             break;
         
@@ -163,7 +163,7 @@ function correctA4(question)
             answer = "<";
             break;
         
-        case "Which relational operator tests for inequality between its two operands?":
+        case "Which relational operator tests for INEQUALITY between its two operands?":
             answer = "!=";
             break;
 
