@@ -12,3 +12,7 @@ Scanner
 parseInt
 widening
 narrowing
+static
+private
+public
+protected
