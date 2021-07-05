@@ -16,3 +16,4 @@ static
 private
 public
 protected
+const
