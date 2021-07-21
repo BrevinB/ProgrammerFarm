@@ -43,7 +43,7 @@ function draw()
 
     //style title
     title.style('font-size', '74px')
-    title.position(332,150)
+    title.position(337,150)
     title.style('color', 'white')
     title.style('font-family', 'PressStart2P-Regular')
 
@@ -102,4 +102,9 @@ function draw()
 
    image(pig, 779, 361, 80, 80) //display pig
 
+}
+
+function mousePressed()
+{
+    saveCanvas(); //save the title screen
 }
