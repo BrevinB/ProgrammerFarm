@@ -27,7 +27,7 @@ function closeSoundSettings() {
   if(document.getElementById("music").checked == true) {
     music = true;
     if(music == true && backgroundSound.isPlaying() == false) {
-      backgroundSound.play();
+      backgroundSound.loop();
     }
   } else {
     music = false;
