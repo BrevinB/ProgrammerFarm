@@ -21,7 +21,7 @@ function levelOne() {
     if(backgroundSound.isPlaying()) {
 
     } else {
-      //backgroundSound.play();
+      backgroundSound.play();
       backgroundSound.loop();
     }
   }
@@ -59,7 +59,7 @@ function levelOne() {
     if(backgroundSound.isPlaying()) {
 
     } else {
-      //backgroundSound.play();
+      backgroundSound.play();
       backgroundSound.loop();
     }
   }
@@ -97,7 +97,7 @@ function levelThree() {
     if(backgroundSound.isPlaying()) {
 
     } else {
-      //backgroundSound.play();
+      backgroundSound.play();
       backgroundSound.loop();
     }
   }
@@ -135,7 +135,7 @@ function levelFour() {
     if(backgroundSound.isPlaying()) {
 
     } else {
-      //backgroundSound.play();
+      backgroundSound.play();
       backgroundSound.loop();
     }
   }
