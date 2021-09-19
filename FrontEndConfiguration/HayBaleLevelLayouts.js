@@ -109,7 +109,7 @@ function levelThree() {
    let x = x_coords[Math.floor(Math.random()*x_coords.length)] //x is a random x_coordinate
    let y = y_coords[Math.floor(Math.random()*y_coords.length)] //y is a random y_coordinate
 
-   hay.push(new Haybale(x, y)) //put haybale in a random spot on the grid
+   hay.push(new HayBale(x, y)) //put haybale in a random spot on the grid
 
    for (let p = 0; p < i; p++) //going through all haybales so far and seeing if any overlap
    {
