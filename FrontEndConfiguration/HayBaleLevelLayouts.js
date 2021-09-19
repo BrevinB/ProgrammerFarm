@@ -25,9 +25,7 @@ function levelOne() {
       backgroundSound.loop();
     }
   }
-  
-  pig = new Pig(0,0); //create pig
-
+ 
   var i = 0;
 
   start: while (i < 19)
@@ -65,8 +63,6 @@ function levelOne() {
       backgroundSound.loop();
     }
   }
-
- pig = new Pig(0,0);
 
  var i = 0;
 
@@ -106,8 +102,6 @@ function levelThree() {
     }
   }
 
- pig = new Pig(0,0);
-
  var i = 0;
 
  start: while (i < 25)
@@ -145,8 +139,6 @@ function levelFour() {
       backgroundSound.loop();
     }
   }
-
- pig = new Pig(0,0);
 
  var i = 0;
 
