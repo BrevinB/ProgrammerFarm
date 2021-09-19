@@ -33,7 +33,7 @@ function levelOne() {
     let x = x_coords[Math.floor(Math.random()*x_coords.length)] //x is a random x_coordinate
     let y = y_coords[Math.floor(Math.random()*y_coords.length)] //y is a random y_coordinate
 
-    hay[i] = new HayBale(x, y) //put haybale in a random spot on the grid
+    hay.push(new HayBale(x, y)) //put haybale in a random spot on the grid
 
     for (let p = 0; p < i; p++) //going through all haybales so far and seeing if any overlap
     {
@@ -71,7 +71,7 @@ function levelOne() {
    let x = x_coords[Math.floor(Math.random()*x_coords.length)] //x is a random x_coordinate
    let y = y_coords[Math.floor(Math.random()*y_coords.length)] //y is a random y_coordinate
 
-   hay[i] = new HayBale(x, y) //put haybale in a random spot on the grid
+   hay.push(new HayBale(x, y)) //put haybale in a random spot on the grid
 
    for (let p = 0; p < i; p++) //going through all haybales so far and seeing if any overlap
    {
@@ -109,7 +109,7 @@ function levelThree() {
    let x = x_coords[Math.floor(Math.random()*x_coords.length)] //x is a random x_coordinate
    let y = y_coords[Math.floor(Math.random()*y_coords.length)] //y is a random y_coordinate
 
-   hay[i] = new HayBale(x, y) //put haybale in a random spot on the grid
+   hay.push(new Haybale()) //put haybale in a random spot on the grid
 
    for (let p = 0; p < i; p++) //going through all haybales so far and seeing if any overlap
    {
@@ -147,7 +147,7 @@ function levelFour() {
    let x = x_coords[Math.floor(Math.random()*x_coords.length)] //x is a random x_coordinate
    let y = y_coords[Math.floor(Math.random()*y_coords.length)] //y is a random y_coordinate
 
-   hay[i] = new HayBale(x, y) //put haybale in a random spot on the grid
+   hay.push(new HayBale(x, y)) //put haybale in a random spot on the grid
 
    for (let p = 0; p < i; p++) //going through all haybales so far and seeing if any overlap
    {
@@ -165,10 +165,9 @@ function levelFour() {
 
 function newLevel() {
       
-  for(h = 0; h < hay.length; h++) {
-
-      hay.pop();
-
+  for (let i = 0; i < hay.length; i++)
+  {
+    hay.pop();
   }
 
   if(q != null) {
