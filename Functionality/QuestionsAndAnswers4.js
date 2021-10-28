@@ -225,5 +225,3 @@ function newRound4() {
 
     
 }
-
-module.exports = correctA4

@@ -164,8 +164,10 @@ function levelFour() {
 }
 
 function newLevel() {
-      
-  for (let i = 0; i < hay.length; i++)
+
+  let haybale_num = hay.length
+
+  for (let i = 0; i < haybale_num; i++)
   {
     hay.pop();
   }

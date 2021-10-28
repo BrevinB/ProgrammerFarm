@@ -229,5 +229,3 @@ function newRound3()
 
     
 }
-
-module.exports = correctA3
