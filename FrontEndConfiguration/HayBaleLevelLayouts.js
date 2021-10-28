@@ -26,9 +26,9 @@ function levelOne() {
     }
   }
  
-  var i = 0;
+  let i = 0;
 
-  start: while (i < 19)
+  start_position1 : while (i < 19)
   {
     let x = x_coords[Math.floor(Math.random()*x_coords.length)] //x is a random x_coordinate
     let y = y_coords[Math.floor(Math.random()*y_coords.length)] //y is a random y_coordinate
@@ -40,7 +40,7 @@ function levelOne() {
       if (hay[p].isOverlapping(hay[i]) || hay[p].isOverlapping(pig)) //check if haybales overlap each other or the pig
       {
         hay.pop(); //remove most recently created Haybale from 'hay'
-        continue start;
+        continue start_position1 ;
       }
     }
 
@@ -64,9 +64,9 @@ function levelOne() {
     }
   }
 
- var i = 0;
+ let i = 0;
 
- start: while (i < 22)
+ start_position2 : while (i < 22)
  {
    let x = x_coords[Math.floor(Math.random()*x_coords.length)] //x is a random x_coordinate
    let y = y_coords[Math.floor(Math.random()*y_coords.length)] //y is a random y_coordinate
@@ -78,7 +78,7 @@ function levelOne() {
      if (hay[p].isOverlapping(hay[i]) || hay[p].isOverlapping(pig)) //check if haybales overlap each other or the pig
      {
        hay.pop(); //remove most recently created Haybale from 'hay'
-       continue start; //go back to start label to restart process of creating haybales
+       continue start_position2 ; //go back to start_position  label to restart process of creating haybales
      }
    }
 
@@ -102,9 +102,9 @@ function levelThree() {
     }
   }
 
- var i = 0;
+ let i = 0;
 
- start: while (i < 25)
+ start_position3 : while (i < 25)
  {
    let x = x_coords[Math.floor(Math.random()*x_coords.length)] //x is a random x_coordinate
    let y = y_coords[Math.floor(Math.random()*y_coords.length)] //y is a random y_coordinate
@@ -116,7 +116,7 @@ function levelThree() {
      if (hay[p].isOverlapping(hay[i]) || hay[p].isOverlapping(pig)) //check if haybales overlap each other or the pig
      {
        hay.pop(); //remove most recently created Haybale from 'hay'
-       continue start; //go back to start label to restart process of creating haybales
+       continue start_position3 ; //go back to start_position  label to restart process of creating haybales
      }
    }
 
@@ -140,9 +140,9 @@ function levelFour() {
     }
   }
 
- var i = 0;
+ let i = 0;
 
- start: while (i < 28)
+ start_position4 : while (i < 28)
  {
    let x = x_coords[Math.floor(Math.random()*x_coords.length)] //x is a random x_coordinate
    let y = y_coords[Math.floor(Math.random()*y_coords.length)] //y is a random y_coordinate
@@ -154,7 +154,7 @@ function levelFour() {
      if (hay[p].isOverlapping(hay[i]) || hay[p].isOverlapping(pig)) //check if haybales overlap each other or the pig
      {
        hay.pop(); //remove most recently created Haybale from 'hay'
-       continue start; //go back to start label to restart process of creating haybales
+       continue start_position4 ; //go back to start_position  label to restart process of creating haybales
      }
    }
 
