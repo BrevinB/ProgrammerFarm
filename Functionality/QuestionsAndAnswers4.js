@@ -1,4 +1,3 @@
-var cA; //to store correct answer info
 var answer4;
 var q;
 var answers4 = [];
@@ -31,18 +30,18 @@ function displayQ4() {
 
 //display answers in their corresponding boxes
 function displayA4(correctA) {
-    var aArray = [];
+    var aArray4 = [];
 
     for (let i = 0; i < answers4.length; i++)
     {
-        aArray[i] = answers4[i];
+        aArray4[i] = answers4[i];
     }
 
     var m; //index of correct answer in 'aArray' array later on in function
 
-    for (let i = 0; i < aArray.length; i++)
+    for (let i = 0; i < aArray4.length; i++)
     {
-        if (aArray[i] == correctA)
+        if (aArray4[i] == correctA)
         {
             m = i;
             break;
@@ -61,7 +60,7 @@ function displayA4(correctA) {
     while (y_coordinates.length != 0) {
         
         i = Math.floor(Math.random()*y_coordinates.length);
-        n = Math.floor(Math.random()*aArray.length);
+        n = Math.floor(Math.random()*aArray4.length);
         y = y_coordinates[i]; //y is a random coordinate from 'y_coordinates' if that coordinate still exists
         
         switch (y) {
@@ -90,13 +89,13 @@ function displayA4(correctA) {
         if(j == 0) {
 
             ans[j] = new Answer(x, y, correctA);
-            aArray.splice(m, 1);
+            aArray4.splice(m, 1);
         
 
         } else {
 
-            ans[j] = new Answer(x, y, aArray[n]); 
-            aArray.splice(n, 1);
+            ans[j] = new Answer(x, y, aArray4[n]); 
+            aArray4.splice(n, 1);
         }
         
         j++;
@@ -150,6 +149,22 @@ function correctA4(question)
         
         case "Which relational operator tests for equality between its two operands?":
             answer = "==";
+            break;
+        
+        case "What kind of loop continues to execute until its corresponding boolean expression is false?":
+            answer = "while";
+            break;
+        
+        case "Which relational operator tests that the leftmost operand is greater than the rightmost operand?":
+            answer = ">";
+            break;
+
+        case "Which relational operator tests that the leftmost operand is less than the rightmost operand?":
+            answer = "<";
+            break;
+        
+        case "Which relational operator tests for inequality between its two operands?":
+            answer = "!=";
             break;
 
     }
@@ -210,3 +225,8 @@ function newRound4() {
 
     
 }
+<<<<<<< HEAD
+=======
+
+module.exports = correctA4
+>>>>>>> 38441cb9c1a7ddc8b678359bfb2da2139a77eacc

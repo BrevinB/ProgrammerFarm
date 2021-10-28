@@ -9,3 +9,6 @@ What is a shorthand way to compute x=x*1?
 What is a shorthand way to compute x=x/1?
 What is a shorthand way to compute x=x%1?
 How do you force specific operations to be performed before others in a mathematical expression?
+Which is a prefix incrementation of var?
+Which is a postfix incrementation of var?
+What is a shorthand way to compute var=var+5?

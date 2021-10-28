@@ -1,4 +1,3 @@
-var cA; //to store correct answer info
 var answer1;
 var q; //question on top of page
 var answers1 = [];
@@ -29,23 +28,24 @@ function displayQ() {
     answer1 = correctA1(question); //get correct answer based on question displayed
     displayA1(answer1); //pass correct answer into displayA()
 
-    q.position(windowWidth / 4.5,5);
+    q.position(375,5);
 }
 
 //display answers in their corresponding boxes
 function displayA1(correctA) {
-    var aArray = [];
+    var aArray1 = [];
 
     for (let i = 0; i < answers1.length; i++)
     {
-        aArray[i] = answers1[i];
+        aArray1[i] = answers1[i];
+        
     }
 
-    var m; //index of correct answer in 'aArray' array later on in function
+    var m; //index of correct answer in 'aArray1' array later on in function
 
-    for (let i = 0; i < aArray.length; i++)
+    for (let i = 0; i < aArray1.length; i++)
     {
-        if (aArray[i] == correctA)
+        if (aArray1[i] == correctA)
         {
             m = i;
             break;
@@ -64,7 +64,7 @@ function displayA1(correctA) {
     while (y_coordinates.length != 0) {
         
         i = Math.floor(Math.random()*y_coordinates.length);
-        n = Math.floor(Math.random()*aArray.length);
+        n = Math.floor(Math.random()*aArray1.length);
         y = y_coordinates[i]; //y is a random coordinate from 'y_coordinates' if that coordinate still exists
         
         switch (y) {
@@ -84,7 +84,7 @@ function displayA1(correctA) {
                 x = 0;
                 break;
         
-            //bottome left
+            //bottom left
             case 172:
                 x = 0;
                 break;
@@ -93,13 +93,14 @@ function displayA1(correctA) {
         if(j == 0) {
 
             ans[j] = new Answer(x, y, correctA);
-            aArray.splice(m, 1);
+            aArray1.splice(m, 1);
+            
         
 
         } else {
 
-            ans[j] = new Answer(x, y, aArray[n]); 
-            aArray.splice(n, 1);
+            ans[j] = new Answer(x, y, aArray1[n]); 
+            aArray1.splice(n, 1);
         }
         
         j++;
@@ -120,15 +121,15 @@ function correctA1(question)
             break;
 
         case "Which is a string literal?":
-            answer = "\"value\"";
+            answer = '"value"';
             break;
 
         case "Which is an integer literal?":
-            answer = 50;
+            answer = "50";
             break;
 
         case "Which is a char literal?":
-            answer = "\'a\'";
+            answer = "'a'";
             break;
 
         case "Which data type stores floating point numbers with 7 digits of accuracy?":
@@ -144,15 +145,31 @@ function correctA1(question)
             break;
         
         case "Which is a double literal?":
-            answer = 40.59;
+            answer = "40.59";
             break;
         
         case "How do you force a double literal to a float literal?":
             answer = "33.4F";
             break;
         
+        case "Which data type that stores integer values has a size of 1 byte?":
+            answer = "byte";
+            break;
+        
+        case "Which data type that stores integer values has a size of 2 bytes?":
+            answer = "short";
+            break;
+        
+        case "Which data type that stores integer values has a size of 4 bytes?":
+            answer = "int";
+            break;
+        
         case "Which data type that stores integer values has a size of 8 bytes?":
             answer = "long";
+            break;
+        
+        case "What is a named storage location in the computer's memory called?":
+            answer = "variable";
             break;
 
     }
@@ -218,3 +235,7 @@ function newRound1() {
     
 }
 
+<<<<<<< HEAD
+=======
+module.exports = correctA1
+>>>>>>> 38441cb9c1a7ddc8b678359bfb2da2139a77eacc
