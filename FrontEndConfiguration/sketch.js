@@ -53,6 +53,7 @@ function setup() {
 
 function draw() {
 
+  //pig = new Pig(0,0);
 
   background(bg);
   //Setup grid interface
@@ -73,7 +74,7 @@ function draw() {
    //Top left corner
    rect(0,-5,85,90);
  
- 
+   //pig = new Pig(0,0);
    
    //pig at starting position
    pig.display();
