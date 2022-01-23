@@ -1,12 +1,15 @@
 /* Open when someone clicks on the span element */
 function openNav() {
+  document.getElementById("initSound").style.width = "0%";
   document.getElementById("myNav").style.width = "100%";
 }
 
 /* Close when someone clicks on the "x" symbol inside the overlay */
 function closeNav() {
   document.getElementById("myNav").style.width = "0%";
-  document.getElementById("title").hidden = true;
+
+  if (level1 == true || level2 == true || level3 == true || level4 == true)
+    document.getElementById("title").hidden = true;
 }
 
 function volumeSettings() {
@@ -17,7 +20,7 @@ function volumeSettings() {
 
 function closeSoundSettings() {
 
-  pig.entered();
+  //pig.entered();
   for(let i = 0; i < hay.length; i++) {
       hay[i].entered();
     }
