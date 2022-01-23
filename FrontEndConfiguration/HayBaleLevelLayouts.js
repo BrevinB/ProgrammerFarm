@@ -137,13 +137,6 @@ function levelThree() {
    i++;
  }
 
-   
-   if (i == 25)
-   {
-     break start;
-   }
- }
-}
 }
 
 function levelFour() {

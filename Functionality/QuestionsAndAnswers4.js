@@ -221,7 +221,6 @@ function newRound4() {
     for(let i = 0; i < hay.length; i++) {
         hay[i].entered();
       }
-    
-
+}
     
 
