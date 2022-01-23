@@ -8,7 +8,7 @@
             "name": "Launch Program",
             "request": "launch",
             "type": "node",
-            "program": "${workspaceFolder}\\${fileBasename}"
+            "program": "${workspaceFolder}//${fileBasename}"
         },
         
         {

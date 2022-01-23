@@ -1,3 +1,5 @@
+var x_coords = [0, 85, 170, 255, 340, 425, 510] //all possible x coordinates
+var y_coords = [0, 85, 170, 255, 340, 425, 510] //all possible y coordinates
 
 function resetValues() {
 
@@ -23,35 +25,30 @@ function levelOne() {
       backgroundSound.loop();
     }
   }
-  
-    //Create the haybales
-   //Line 1
-   hay[0] = new HayBale(340, 0,);
- 
+  pig = new Pig(0,0);
+
   let i = 0;
 
-  start: while (i < 19)
+  while (i < 19)
   {
     let x = x_coords[Math.floor(Math.random()*x_coords.length)] //x is a random x_coordinate
     let y = y_coords[Math.floor(Math.random()*y_coords.length)] //y is a random y_coordinate
 
-    hay.push(new HayBale(x, y)) //put haybale in a random spot on the grid
-
-    for (let p = 0; p < i; p++) //going through all haybales so far and seeing if any overlap
+    if (x==0 && y==0 || x==510 && y==0 || x==510 && y==510 || x==0 && y==510 || x==0 && y==170) //check if pig or answers are overlapped
     {
-      if (hay[p].isOverlapping(hay[i]) || hay[p].isOverlapping(pig)) //check if haybales overlap each other or the pig
-      {
-        hay.pop(); //remove most recently created Haybale from 'hay'
-        continue start;
-      }
+      hay[i] = null; 
+      continue;
+    }
+ 
+    hay[i] = new HayBale(x, y) //put haybale in a random spot on the grid
+
+    if (checkOverlap(i)==true)
+    {
+      hay[i] = null;
+      continue;
     }
 
     i++;
-
-    if (i == 19)
-    {
-      break start;
-    }
   }
  
  }
@@ -70,71 +67,32 @@ function levelOne() {
       backgroundSound.loop();
     }
   }
-  //Create the haybales
- //Line 1
- hay[0] = new HayBale(340, 0,);
- hay[1] = new HayBale(85, 0);
- hay[2] = new HayBale(255, 0);
 
- //Line 2
- hay[3] = new HayBale(0, 85);
- hay[4] = new HayBale(85, 85);
- hay[5] = new HayBale(170, 85);
- hay[6] = new HayBale(255, 85);
- hay[7] = new HayBale(425, 85);
+  pig = new Pig(0,0);
 
- //Line 3
- hay[8] = new HayBale(255, 170);
- hay[9] = new HayBale(425, 170);
+  let i = 0;
 
- //Line 4
- hay[10] = new HayBale(0, 255);
- hay[11] = new HayBale(85, 255);
- hay[12] = new HayBale(170, 255);
- hay[13] = new HayBale(255, 255);
- hay[14] = new HayBale(425, 255);
+  while (i < 22)
+  {
+    let x = x_coords[Math.floor(Math.random()*x_coords.length)] //x is a random x_coordinate
+    let y = y_coords[Math.floor(Math.random()*y_coords.length)] //y is a random y_coordinate
 
- //Line 5
- hay[15] = new HayBale(255, 340);
- hay[16] = new HayBale(425, 340);
+    if (x==0 && y==0 || x==510 && y==0 || x==510 && y==510 || x==0 && y==510 || x==0 && y==170) //check if pig or any of the answers are overlapped
+    {
+      hay[i] = null; 
+      continue;
+    }
 
- //Line 6
- hay[17] = new HayBale(255, 425);
- hay[18] = new HayBale(340, 425);
- hay[19] = new HayBale(425, 425);
- hay[20] = new HayBale(0, 425);
+    hay[i] = new HayBale(x, y) //put haybale in a random spot on the grid
 
- //Line 7
- hay[21] = new HayBale(255, 510);
- hay[22] = new HayBale(85, 510);
- 
+    if (checkOverlap(i)==true)
+    {
+      hay[i] = null
+      continue;
+    }
 
- var i = 0;
-
- start: while (i < 22)
- {
-   let x = x_coords[Math.floor(Math.random()*x_coords.length)] //x is a random x_coordinate
-   let y = y_coords[Math.floor(Math.random()*y_coords.length)] //y is a random y_coordinate
-
-   hay.push(new HayBale(x, y)) //put haybale in a random spot on the grid
-
-   for (let p = 0; p < i; p++) //going through all haybales so far and seeing if any overlap
-   {
-     if (hay[p].isOverlapping(hay[i]) || hay[p].isOverlapping(pig)) //check if haybales overlap each other or the pig
-     {
-       hay.pop(); //remove most recently created Haybale from 'hay'
-       continue start; //go back to start label to restart process of creating haybales
-     }
-   }
-
-   i++;
-
-   
-   if (i == 22)
-   {
-     break start;
-   }
- }
+    i++;
+  }
 
 }
 
@@ -152,50 +110,32 @@ function levelThree() {
       backgroundSound.loop();
     }
   }
+  
+ pig = new Pig(0,0);
 
-   //Create the haybales
- //Line 1
- hay[0] = new HayBale(340, 0,);
- hay[1] = new HayBale(85, 0);
- hay[2] = new HayBale(255, 0);
+ let i = 0;
 
- //Line 2
- hay[3] = new HayBale(0, 85);
- hay[4] = new HayBale(85, 85);
- hay[5] = new HayBale(170, 85);
- hay[6] = new HayBale(255, 85);
- hay[7] = new HayBale(425, 85);
+ while (i < 25)
+ {
+   let x = x_coords[Math.floor(Math.random()*x_coords.length)] //x is a random x_coordinate
+   let y = y_coords[Math.floor(Math.random()*y_coords.length)] //y is a random y_coordinate
 
- //Line 3
- hay[8] = new HayBale(255, 170);
- hay[9] = new HayBale(425, 170);
-
- //Line 4
- hay[10] = new HayBale(0, 255);
- hay[11] = new HayBale(85, 255);
- hay[12] = new HayBale(170, 255);
- hay[13] = new HayBale(255, 255);
- hay[14] = new HayBale(425, 255);
-
- //Line 5
- hay[15] = new HayBale(255, 340);
- hay[16] = new HayBale(425, 340);
- hay[17] = new HayBale(85, 340);
-
- //Line 6
- hay[18] = new HayBale(255, 425);
- hay[19] = new HayBale(340, 425);
- hay[20] = new HayBale(425, 425);
- hay[21] = new HayBale(0, 425);
- hay[22] = new HayBale(510, 425);
-
- //Line 7
- hay[23] = new HayBale(255, 510);
- hay[24] = new HayBale(85, 510);
- hay[25] = new HayBale(425, 510);
+   if (x==0 && y==0 || x==510 && y==0 || x==510 && y==510 || x==0 && y==510 || x==0 && y==170) //check if pig or any of the answers are overlapped
+   {
+     hay[i] = null; 
+     continue;
+   }
  
+   hay[i] = new HayBale(x, y) //put haybale in a random spot on the grid
+
+   if (checkOverlap(i)==true)
+   {
+     hay[i] = null
+     continue;
+   }
 
    i++;
+ }
 
    
    if (i == 25)
@@ -220,89 +160,59 @@ function levelFour() {
       backgroundSound.loop();
     }
   }
-  
-     //Create the haybales
- //Line 1
- hay[0] = new HayBale(340, 0,);
- hay[1] = new HayBale(85, 0);
- hay[2] = new HayBale(255, 0);
 
- //Line 2
- hay[3] = new HayBale(0, 85);
- hay[4] = new HayBale(85, 85);
- hay[5] = new HayBale(170, 85);
- hay[6] = new HayBale(255, 85);
- hay[7] = new HayBale(425, 85);
- hay[8] = new HayBale(510, 85);
+  pig = new Pig(0,0);
 
- //Line 3
- hay[9] = new HayBale(85, 170);
- hay[10] = new HayBale(255, 170);
- hay[11] = new HayBale(425, 170);
+  let i = 0;
 
+  while (i < 28)
+  {
+    let x = x_coords[Math.floor(Math.random()*x_coords.length)] //x is a random x_coordinate
+    let y = y_coords[Math.floor(Math.random()*y_coords.length)] //y is a random y_coordinate
 
- //Line 4
- hay[12] = new HayBale(0, 255);
- hay[13] = new HayBale(85, 255);
- hay[14] = new HayBale(170, 255);
- hay[15] = new HayBale(255, 255);
- hay[16] = new HayBale(340, 255);
- hay[17] = new HayBale(425, 255);
+    if (x==0 && y==0 || x==510 && y==0 || x==510 && y==510 || x==0 && y==510 || x==0 && y==170) //check if pig or any of the answers are overlapped
+    {
+      hay[i] = null; 
+      continue;
+    }
+    
+    
+    hay[i] = new HayBale(x, y) //put haybale in a random spot on the grid
 
- //Line 5
- hay[18] = new HayBale(255, 340);
- hay[19] = new HayBale(425, 340);
- hay[20] = new HayBale(85, 340);
+    if (checkOverlap(i)==true)
+    {
+      hay[i] = null
+      continue;
+    }
 
- //Line 6
- hay[21] = new HayBale(255, 425);
- hay[22] = new HayBale(340, 425);
- hay[23] = new HayBale(425, 425);
- hay[24] = new HayBale(0, 425);
- hay[25] = new HayBale(510, 425);
-
- //Line 7
- hay[26] = new HayBale(255, 510);
- hay[27] = new HayBale(85, 510);
- hay[28] = new HayBale(425, 510);
- 
-
- var i = 0;
-
- start_position: while (i < 28)
- {
-   let x = x_coords[Math.floor(Math.random()*x_coords.length)] //x is a random x_coordinate
-   let y = y_coords[Math.floor(Math.random()*y_coords.length)] //y is a random y_coordinate
-
-   hay.push(new HayBale(x, y)) //put haybale in a random spot on the grid
-
-   for (let p = 0; p < i; p++) //going through all haybales so far and seeing if any overlap
-   {
-     if (hay[p].isOverlapping(hay[i]) || hay[p].isOverlapping(pig)) //check if haybales overlap each other or the pig
-     {
-       hay.pop(); //remove most recently created Haybale from 'hay'
-       continue start_position; //go back to start label to restart process of creating haybales
-     }
-   }
-
-   i++;
-
-   
-   if (i == 28)
-   {
-     break start;
-   }
- }
+    i++;
+  }
 
 }
 
-function newLevel() {
-      
-  for(h = 0; h < hay.length; h++) {
-
-      hay.pop();
-
+//check for any overlapping haybales
+function checkOverlap(i)
+{
+  for (let p = 0; p < i; p++)
+  {
+    if (hay[p].isOverlapping(hay[i]))
+    {
+      return true; //if any pre-existing haybale overlapped by most recent haybale return true
+    }
   }
+
+  return false;
+}
+
+function newLevel() {
+
+  hay = []
+  // let length = hay.length;
+
+  // for (let i = 0; i < length; i++)
+  // {
+  //   hay.pop();
+  // }
 
   if(q != null) {
 

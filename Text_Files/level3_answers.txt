@@ -1,4 +1,5 @@
 +
+concat
 length
 local
 //
@@ -12,3 +13,8 @@ Scanner
 parseInt
 widening
 narrowing
+static
+private
+public
+protected
+const

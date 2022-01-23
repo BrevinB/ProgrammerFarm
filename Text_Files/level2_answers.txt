@@ -12,3 +12,7 @@ x%=1
 ++var
 var++
 var+=5
+--var
+var--
+var*=5
+var%=5

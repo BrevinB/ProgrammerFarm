@@ -147,7 +147,7 @@ function correctA4(question)
             answer = "break";
             break;
         
-        case "Which relational operator tests for equality between its two operands?":
+        case "Which relational operator tests for EQUALITY between its two operands?":
             answer = "==";
             break;
         
@@ -163,7 +163,7 @@ function correctA4(question)
             answer = "<";
             break;
         
-        case "Which relational operator tests for inequality between its two operands?":
+        case "Which relational operator tests for INEQUALITY between its two operands?":
             answer = "!=";
             break;
 
@@ -224,9 +224,4 @@ function newRound4() {
     
 
     
-}
-<<<<<<< HEAD
-=======
 
-module.exports = correctA4
->>>>>>> 38441cb9c1a7ddc8b678359bfb2da2139a77eacc

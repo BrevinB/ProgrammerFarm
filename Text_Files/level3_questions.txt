@@ -1,4 +1,5 @@
-What operator can be used for String concatenation?
+What OPERATOR can be used for String concatenation?
+Which METHOD can be used for String concatenation?
 What String method returns how many characters are in a String variable?
 What variables are accessible from their declaration to the end of the method in which the declaration took place?
 How are single line comments specified?
