@@ -12,3 +12,7 @@ byte
 short
 int
 long
+boolean
+char
+true
+false

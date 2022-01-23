@@ -3,12 +3,6 @@ function openNav() {
   document.getElementById("myNav").style.width = "100%";
 }
 
-/* Show title screen and nothing more when first booted up */
-function showTitle(){
-  document.getElementsById("initSound").hidden = true;
-  document.getElementById("titlescreen").hidden = false;
-}
-
 /* Close when someone clicks on the "x" symbol inside the overlay */
 function closeNav() {
   document.getElementById("myNav").style.width = "0%";
@@ -34,6 +28,7 @@ function closeSoundSettings() {
     music = true;
     if(music == true && backgroundSound.isPlaying() == false) {
       backgroundSound.play();
+      backgroundSound.loop();
     }
   } else {
     music = false;

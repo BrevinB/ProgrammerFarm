@@ -9,7 +9,7 @@ class HayBale {
     
   }
 
-  //if haybale is clicked set the border and don't let anything else click until isSelected is false
+  //if object is clicked set the border and don't let anything else click until isSelected is false
   clicked(px, py) {
     
     if(hayClicked == true) {
@@ -113,6 +113,16 @@ class HayBale {
         }
   }
 }
+
+  isOverlapping(object)
+  {
+    if (this.column === object.column && this.row === object.row) //check if this object is overlapping another object or the pig
+    {
+      return true;
+    }
+
+    return false;
+  }
 
   checkPigColission() {
 

@@ -3,7 +3,8 @@ const correctA3 = require('../Functionality/QuestionsAndAnswers3')
 
 test('correctA3 should return the correct answer for the question being passed in', () => 
 {
-    expect(correctA3("What operator can be used for String concatenation?")).toBe("+")
+    expect(correctA3("What OPERATOR can be used for String concatenation?")).toBe("+")
+    expect(correctA3("Which METHOD can be used for String concatenation?")).toBe('concat')
     expect(correctA3("What String method returns how many characters are in a String variable?")).toBe("length")
     expect(correctA3('What variables are accessible from their declaration to the end of the method in which the declaration took place?')).toBe('local')
     expect(correctA3('How are single line comments specified?')).toBe('//')

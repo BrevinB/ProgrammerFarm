@@ -111,8 +111,12 @@ function correctA3(question)
 
     switch (question)
     {
-        case "What operator can be used for String concatenation?":
+        case "What OPERATOR can be used for String concatenation?":
             answer = "+";
+            break;
+        
+        case "Which METHOD can be used for String concatenation?":
+            answer = "concat";
             break;
 
         case "What String method returns how many characters are in a String variable?":
@@ -225,5 +229,3 @@ function newRound3()
 
     
 }
-
-module.exports = correctA3

@@ -12,3 +12,7 @@ break
 >
 <
 !=
+>=
+<=
+continue
+return

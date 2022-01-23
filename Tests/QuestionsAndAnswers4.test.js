@@ -12,9 +12,9 @@ test('correctA4 should return the correct answer for the question being passed i
     expect(correctA4("In a switch case statement, if none of the case label expressions match the switch expression, which optional label is branched to instead?")).toBe("default");
     expect(correctA4("What logical operator inverts the boolean value of a boolean expression?")).toBe("!");
     expect(correctA4("For a switch case statement, which keyword should terminate a case label expression to stop all remaining case expressions from executing?")).toBe("break");
-    expect(correctA4("Which relational operator tests for equality between its two operands?")).toBe("==");
+    expect(correctA4("Which relational operator tests for EQUALITY between its two operands?")).toBe("==");
     expect(correctA4("What kind of loop continues to execute until its corresponding boolean expression is false?")).toBe("while")
     expect(correctA4('Which relational operator tests that the leftmost operand is greater than the rightmost operand?')).toBe('>')
     expect(correctA4('Which relational operator tests that the leftmost operand is less than the rightmost operand?')).toBe('<')
-    expect(correctA4("Which relational operator tests for inequality between its two operands?")).toBe("!=")
+    expect(correctA4("Which relational operator tests for INEQUALITY between its two operands?")).toBe("!=")
 })

@@ -212,10 +212,6 @@ function checkAnswer1(x,y) {
   
 //remove current questions and answers when player wins the game
 function newRound1() {
-
-   
-
-
      for(h = 0; h < hay.length; h++) {
 
         hay.pop();
@@ -233,9 +229,5 @@ function newRound1() {
     
 
     
-}
 
-<<<<<<< HEAD
-=======
-module.exports = correctA1
->>>>>>> 38441cb9c1a7ddc8b678359bfb2da2139a77eacc
+}
