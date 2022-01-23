@@ -152,7 +152,7 @@ function mousePressed() {
 
   if(hayClicked) {
     
-  } else if(pig.clicked(mouseX, mouseY)) {
+  } else if(pig.isClicked(mouseX, mouseY)) {
       pigClicked = true;
   }
 

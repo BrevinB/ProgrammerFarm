@@ -10,10 +10,11 @@ class Pig {
 
     
  //if haybale is clicked set the border and don't let anything else click until isSelected is false
- clicked(px, py) {
+ isClicked(px, py) {
     
     if(pigClicked == true) {
        //Do nothing
+       //return false;
     } else {
 
       if(px >= this.column && px < this.column + 80 && py >= this.row && py < this.row + 90) {
