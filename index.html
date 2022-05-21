@@ -8,7 +8,7 @@
 
     <link rel="stylesheet" type="text/css" href="style.css">
     <script src="libraries/p5.js"></script>
-    <script src="libraries/p5.min.js"></script>
+    <script src="libraries/p5.dom.min.js"></script>
     <script src="libraries/p5.sound.js"></script>
     
   </head>
@@ -80,13 +80,6 @@
         <span class="helpSpan"><img src="Images/arrowKeys.png" height=250% width=250% id="arrow"></span>
       </div>
 
-      <div class="span-content">
-
-        <span class="helpSpan"><img src="Images/spaceBar.png" height=150% width=260%></span>
-        <span class="helpSpan"><img src="Images/returnKey.png" height=200% width=200%></span>
-
-      </div>  
-
       <div class="span-content-p">
 
        <span class="helpSpanParagraph"><p>Click on the haybales or the pig and use the 
@@ -97,7 +90,8 @@
        </p>
       
        <p>The goal of the game is to form a path of haybales from the pig to the correct answer. Go from level to level increasing your total score and 
-         answering questions.
+         answering questions. <br><br>
+         If you score <span style="color: blue">1150 points</span> you can unlock levels 5-8!
        </p>
       </span>
 
@@ -113,10 +107,14 @@
       <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
        <!-- Overlay content -->
      <div class="overlay-content">
-       <a onclick="resetValues(), levelOneSelected(), closeNav()">Level 1</a>
-       <a onclick="resetValues(), levelTwoSelected(), closeNav()">Level 2</a>
-       <a onclick="resetValues(), levelThreeSelected(), closeNav()">Level 3</a>
-       <a onclick="resetValues(), levelFourSelected(), closeNav()">Level 4</a>
+       <a onclick="selectLevelOne(), resetValues(), levelOneSelected(), closeNav()">Level 1</a>
+       <a onclick="selectLevelTwo(), resetValues(), levelTwoSelected(), closeNav()">Level 2</a>
+       <a onclick="selectLevelThree(), resetValues(), levelThreeSelected(), closeNav()">Level 3</a>
+       <a onclick="selectLevelFour(), resetValues(), levelFourSelected(), closeNav()">Level 4</a>
+       <a onclick="resetValues(), levelFiveSelected(), closeNav()">Level 5</a>
+       <a onclick="resetValues(), levelSixSelected(), closeNav()">Level 6</a>
+       <a onclick="resetValues(), levelSevenSelected(), closeNav()">Level 7</a>
+       <a onclick="resetValues(), levelEightSelected(), closeNav()">Level 8</a>
        <a onclick="closeNav(), volumeSettings()">Sound Settings</a>
      </div> 
    </div>

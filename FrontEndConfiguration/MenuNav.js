@@ -8,7 +8,7 @@ function openNav() {
 function closeNav() {
   document.getElementById("myNav").style.width = "0%";
 
-  if (level1 == true || level2 == true || level3 == true || level4 == true)
+  if (level1 == true || level2 == true || level3 == true || level4 == true || level5 == true || level6 == true || level7 == true || level8 == true)
     document.getElementById("title").hidden = true;
 }
 
@@ -76,7 +76,7 @@ function youLose() {
 
     document.getElementById("correctAnswer").innerHTML = "Correct Answer was : " + answer4;
 
-  }
+   }
   
   
 }
@@ -92,6 +92,10 @@ function levelOneSelected() {
   level2=false;
   level3=false;
   level4=false;
+  level5 = false;
+  level6 = false;
+  level7 = false;
+  level8 = false;
   return level1 = true;
 
 }
@@ -100,6 +104,10 @@ function levelTwoSelected() {
   level1 = false;
   level3 = false;
   level4 = false;
+  level5 = false;
+  level6 = false;
+  level7 = false;
+  level8 = false;
   return level2 = true;
 }
 
@@ -107,6 +115,10 @@ function levelThreeSelected() {
   level1 = false;
   level2 = false;
   level4 = false;
+  level5 = false;
+  level6 = false;
+  level7 = false;
+  level8 = false;
   return level3 = true;
 }
 
@@ -114,5 +126,74 @@ function levelFourSelected() {
   level1 = false;
   level2 = false;
   level3 = false;
+  level5 = false;
+  level6 = false;
+  level7 = false;
+  level8 = false;
   return level4 = true;
+}
+
+function levelFiveSelected() {
+  if (total >= 1150)
+  {
+    level1 = false;
+    level2 = false;
+    level3 = false;
+    level4 = false;
+    level6 = false;
+    level7 = false;
+    level8 = false;
+    return level5 = true;
+  } else {
+    alert("You don't have enough points to play level 5 yet!");
+  }
+
+}
+
+function levelSixSelected() {
+  if (total >= 1150)
+  {
+    level1 = false;
+    level2 = false;
+    level3 = false;
+    level4 = false;
+    level5 = false;
+    level7 = false;
+    level8 = false;
+    return level6 = true;
+  } else {
+    alert("You don't have enough points to play level 6 yet!");
+  }
+}
+
+function levelSevenSelected() {
+  if (total >= 1150)
+  {
+    level1 = false;
+    level2 = false;
+    level3 = false;
+    level4 = false;
+    level5 = false;
+    level6 = false;
+    level8 = false;
+    return level7 = true;
+  } else {
+    alert("You don't have enough points to play level 7 yet!");
+  }
+}
+
+function levelEightSelected() {
+  if (total >= 1150)
+  {
+    level1 = false;
+    level2 = false;
+    level3 = false;
+    level4 = false;
+    level5 = false;
+    level6 = false;
+    level7 = false;
+    return level8 = true;
+  } else {
+    alert("You don't have enough points to play level 8 yet!");
+  }
 }

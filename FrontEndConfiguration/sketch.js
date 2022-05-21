@@ -5,8 +5,8 @@ var hayBaleImg, bg, pigImg, index, pig;
 var pigClicked = false;
 var hayClicked = false;
 var pigR, pigL, pigU, pigD, hayR, hayL, hayU, hayD = false;
-var level1 = false, level2 = false, level3 = false, level4 = false;
-var level1Check = false, level2Check = false; level3Check = false, level4Check = false;
+var level1 = false, level2 = false, level3 = false, level4 = false, level5 = false, level6 = false, level7 = false, level8 = false;
+var level1Check = false, level2Check = false; level3Check = false, level4Check = false, level5Check = false, level6Check = false, level7Check = false, level8Check = false;
 var total = 0;
 let pigSound;
 let backgroundSound;
@@ -54,7 +54,6 @@ function setup() {
 function draw() {
 
   //pig = new Pig(0,0);
-
   background(bg);
   //Setup grid interface
   for (var x = 0; x < width; x += width / 7) {
@@ -73,9 +72,7 @@ function draw() {
    fill(greenBlocks);
    //Top left corner
    rect(0,-5,85,90);
- 
-   //pig = new Pig(0,0);
-   
+
    //pig at starting position
    pig.display();
   
@@ -103,15 +100,49 @@ function draw() {
     displayQ3();
     level3 = false;
   
-  } else if(level4 == true) {
+  } else if (level4 == true) {
+      level4Check = true;
+      newLevel();
+      levelFour();
+      displayQ4();
+      level4 = false;
+    } 
 
-    level4Check = true;
-    newLevel();
-    levelFour();
-    displayQ4();
-    level4 = false;
+  if (total >= 1150)
+  {
+    if (level5 == true)
+    {
+     level5Check = true;
+     newLevel();
+     levelFive();
+     level5 = false; 
+    } else if (level6 == true)
+    {
+      level6Check = true;
+      newLevel();
+      levelSix();
+      level6 = false;
+    } else if (level7 == true)
+    {
+      level7Check = true;
+      newLevel();
+      levelSeven();
+      level7 = false;
+    } else {
+      if (level8 == true)
+      {
+        level8Check = true;
+        newLevel();
+        levelEight();
+        level8 = false;
+      }
+    }
+  }
+  else {
+    ;
+
+  }
   
-   } 
 
 
  
@@ -131,7 +162,6 @@ function draw() {
 
 
 }
-
 
 //check to see if there is a haybale where the mouse clicked and if there is perform the clicked funcion
 function mousePressed() {
