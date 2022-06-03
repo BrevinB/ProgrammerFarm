@@ -16,3 +16,7 @@ break
 <=
 continue
 return
+new
+(   )
+void
+:

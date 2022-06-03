@@ -30,6 +30,10 @@ function preload() {
   generateLevelTwoQAndA();
   generateLevelThreeQAndA();
   generateLevelFourQAndA();
+  generateLevelFiveQAndA();
+  generateLevelSixQAndA();
+  generateLevelSevenQAndA();
+  generateLevelEightQAndA();
 
 }
 
@@ -115,18 +119,21 @@ function draw() {
      level5Check = true;
      newLevel();
      levelFive();
+     displayQ5();
      level5 = false; 
     } else if (level6 == true)
     {
       level6Check = true;
       newLevel();
       levelSix();
+      displayQ6();
       level6 = false;
     } else if (level7 == true)
     {
       level7Check = true;
       newLevel();
       levelSeven();
+      displayQ7();
       level7 = false;
     } else {
       if (level8 == true)
@@ -134,6 +141,7 @@ function draw() {
         level8Check = true;
         newLevel();
         levelEight();
+        displayQ8();
         level8 = false;
       }
     }

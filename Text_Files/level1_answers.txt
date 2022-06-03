@@ -16,3 +16,4 @@ boolean
 char
 true
 false
+String

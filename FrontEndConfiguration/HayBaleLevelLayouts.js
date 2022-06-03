@@ -331,7 +331,7 @@ function levelSix() {
 
   let i = 0;
 
-  while (i < 31)
+  while (i < 32)
   {
     let x = x_coords[Math.floor(Math.random()*x_coords.length)] //x is a random x_coordinate
     let y = y_coords[Math.floor(Math.random()*y_coords.length)] //y is a random y_coordinate
@@ -375,7 +375,7 @@ function levelSeven() {
 
   let i = 0;
 
-  while (i < 31)
+  while (i < 33)
   {
     let x = x_coords[Math.floor(Math.random()*x_coords.length)] //x is a random x_coordinate
     let y = y_coords[Math.floor(Math.random()*y_coords.length)] //y is a random y_coordinate
@@ -419,7 +419,7 @@ function levelEight() {
 
   let i = 0;
 
-  while (i < 31)
+  while (i < 34)
   {
     let x = x_coords[Math.floor(Math.random()*x_coords.length)] //x is a random x_coordinate
     let y = y_coords[Math.floor(Math.random()*y_coords.length)] //y is a random y_coordinate
