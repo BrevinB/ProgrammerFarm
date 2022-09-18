@@ -76,6 +76,14 @@ function youLose() {
 
     document.getElementById("correctAnswer").innerHTML = "Correct Answer was : " + answer4;
 
+   } else if(level5Check == true) {
+    document.getElementById("correctAnswer").innerHTML = "Correct Answer was : " + answer5;
+   } else if(level6Check == true) {
+    document.getElementById("correctAnswer").innerHTML = "Correct Answer was : " + answer6;
+   } else if(level7Check == true) {
+    document.getElementById("correctAnswer").innerHTML = "Correct Answer was : " + answer7;
+   } else {
+    document.getElementById("correctAnswer").innerHTML = "Correct Answer was : " + answer8;
    }
   
   
@@ -86,6 +94,11 @@ function playAgain() {
   
 }
 
+function closeLevelLocked()
+{
+  document.getElementById("levelLocked").style.width="0%";
+  document.getElementById("initSound").style.width="100%";
+}
 
 function levelOneSelected() {
   
@@ -145,7 +158,7 @@ function levelFiveSelected() {
     level8 = false;
     return level5 = true;
   } else {
-    alert("You don't have enough points to play level 5 yet!");
+    document.getElementById("levelLocked").style.width="100%";
   }
 
 }
@@ -162,7 +175,7 @@ function levelSixSelected() {
     level8 = false;
     return level6 = true;
   } else {
-    alert("You don't have enough points to play level 6 yet!");
+    document.getElementById("levelLocked").style.width="100%";
   }
 }
 
@@ -178,7 +191,7 @@ function levelSevenSelected() {
     level8 = false;
     return level7 = true;
   } else {
-    alert("You don't have enough points to play level 7 yet!");
+    document.getElementById("levelLocked").style.width="100%";
   }
 }
 
@@ -194,6 +207,6 @@ function levelEightSelected() {
     level7 = false;
     return level8 = true;
   } else {
-    alert("You don't have enough points to play level 8 yet!");
+    document.getElementById("levelLocked").style.width="100%";
   }
 }
