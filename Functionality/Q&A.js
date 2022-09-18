@@ -26,7 +26,7 @@ class Answer {
 
         else
         {
-          textSize(8.5);
+          textSize(8);
         }
         this.p = text(this.answer, this.column+40, this.row+50);
 
