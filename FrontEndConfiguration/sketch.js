@@ -112,7 +112,7 @@ function draw() {
       level4 = false;
     } 
 
-  if (total >= 1150)
+  if (total >= 1150 || levelsUnlocked === true)
   {
     if (level5 == true)
     {

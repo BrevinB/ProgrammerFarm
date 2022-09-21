@@ -1,3 +1,5 @@
+let levelsUnlocked = false; //keep levels 5-8 unlocked when player gets wrong answer after getting 1150+ points
+
 /* Open when someone clicks on the span element */
 function openNav() {
   document.getElementById("initSound").style.width = "0%";
@@ -147,8 +149,9 @@ function levelFourSelected() {
 }
 
 function levelFiveSelected() {
-  if (total >= 1150)
+  if (total >= 1150 || levelsUnlocked === true)
   {
+    levelsUnlocked = true;
     level1 = false;
     level2 = false;
     level3 = false;
@@ -158,14 +161,15 @@ function levelFiveSelected() {
     level8 = false;
     return level5 = true;
   } else {
-    document.getElementById("levelLocked").style.width="100%";
+    openLevelLocked()
   }
 
 }
 
 function levelSixSelected() {
-  if (total >= 1150)
+  if (total >= 1150 || levelsUnlocked === true)
   {
+    levelsUnlocked = true;
     level1 = false;
     level2 = false;
     level3 = false;
@@ -175,13 +179,14 @@ function levelSixSelected() {
     level8 = false;
     return level6 = true;
   } else {
-    document.getElementById("levelLocked").style.width="100%";
+    openLevelLocked()
   }
 }
 
 function levelSevenSelected() {
-  if (total >= 1150)
+  if (total >= 1150 || levelsUnlocked === true)
   {
+    levelsUnlocked = true;
     level1 = false;
     level2 = false;
     level3 = false;
@@ -191,13 +196,14 @@ function levelSevenSelected() {
     level8 = false;
     return level7 = true;
   } else {
-    document.getElementById("levelLocked").style.width="100%";
+    openLevelLocked()
   }
 }
 
 function levelEightSelected() {
-  if (total >= 1150)
+  if (total >= 1150 || levelsUnlocked === true)
   {
+    levelsUnlocked = true;
     level1 = false;
     level2 = false;
     level3 = false;
@@ -207,6 +213,12 @@ function levelEightSelected() {
     level7 = false;
     return level8 = true;
   } else {
-    document.getElementById("levelLocked").style.width="100%";
+    openLevelLocked()
   }
+}
+
+function openLevelLocked()
+{
+  if (levelsUnlocked === false && total < 1150) //if levels 5-8 haven't been unlocked yet AND total is less than 1150, display locked levels
+    document.getElementById("levelLocked").style.width="100%";
 }

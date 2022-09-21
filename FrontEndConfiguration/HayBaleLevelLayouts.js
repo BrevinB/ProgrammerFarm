@@ -35,7 +35,7 @@ function selectLevelFour()
 
 function resetValues() {
 
-  if (total >= 1500)
+  if (total >= 1500 || levelsUnlocked === true)
   {
     level1Check = false;
     level2Check = false;
