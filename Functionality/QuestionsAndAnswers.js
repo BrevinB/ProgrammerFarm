@@ -224,3 +224,5 @@ function newRound1() {
     
 
 }
+
+module.exports = correctA1

@@ -228,3 +228,5 @@ function newRound2()
 
     
 }
+
+module.exports = correctA2
